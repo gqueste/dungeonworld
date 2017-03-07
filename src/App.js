@@ -1,20 +1,20 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import StepsContainer from './containers/StepsContainer';
+import CharacterSheetContainer from './containers/CharacterSheetContainer';
 
 class App extends Component {
-  render() {
+  render(){
     return (
       <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+        <h1 className='text-center'>Dungeon World</h1>
+        <div className='col-md-6'>
+          <StepsContainer />
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <div className='col-md-6'>
+          <CharacterSheetContainer />
+        </div>
       </div>
-    );
+    )
   }
 }
 
