@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import StepsContainer from './containers/StepsContainer';
+import Steps from './components/Steps';
 import CharacterSheetContainer from './containers/CharacterSheetContainer';
 
 class App extends Component {
@@ -8,7 +8,7 @@ class App extends Component {
       <div className="App">
         <h1 className='text-center'>Dungeon World</h1>
         <div className='col-md-6'>
-          <StepsContainer />
+          <Steps />
         </div>
         <div className='col-md-6'>
           <CharacterSheetContainer />

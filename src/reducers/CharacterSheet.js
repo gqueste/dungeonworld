@@ -1,3 +1,5 @@
+import Utils from '../Utils';
+
 export const defaultCharacterSheet = {
   description: 'Coucou'
 };
@@ -5,11 +7,10 @@ export const defaultCharacterSheet = {
 export const characterSheetChange = (characterSheet, action) => {
   switch (action.type) {
     case 'CHANGE_CLASS':
-      //TODO dispatch the Action
-      // creates redux for the Classes
-      //
-      characterSheet.currentDescription = 'ça a changé :p';
-      return characterSheet;
+      const currentClass = Utils.getClassFromId(action.id);
+      return Object.assign({}, characterSheet, {
+        description: currentClass.description
+      });
     default:
       return characterSheet;
   }

@@ -8,10 +8,11 @@ const initialState = {
 
 
 const DungeonworldApp = (state = initialState, action) => {
-  return {
+  let ret = {
     characterSheet : characterSheetChange(state.characterSheet, action),
     classes: defaultClasses
-  }
+  };
+  return ret;
 };
 
 export default DungeonworldApp;
