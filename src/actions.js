@@ -11,3 +11,10 @@ export const onNameChange = (name) => {
     name
   }
 };
+
+export const onRaceChange = (race) => {
+  return {
+    type: 'CHANGE_RACE',
+    race
+  }
+};

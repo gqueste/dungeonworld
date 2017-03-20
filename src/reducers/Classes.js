@@ -12,6 +12,16 @@ export const defaultClasses = [
         id: 'superman',
         label: 'Superman'
       }
+    ],
+    races: [
+      {
+        id: 'human',
+        label: 'Humain'
+      },
+      {
+        id: 'chat',
+        label: 'Chat'
+      }
     ]
   },
   {
