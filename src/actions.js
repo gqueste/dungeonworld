@@ -4,3 +4,10 @@ export const onClassChange = (id) => {
     id
   }
 };
+
+export const onNameChange = (name) => {
+  return {
+    type: 'CHANGE_NAME',
+    name
+  }
+};

@@ -1,16 +1,19 @@
 import { characterSheetChange, defaultCharacterSheet } from './CharacterSheet';
+import { namesChange } from './Names';
 import { defaultClasses } from './Classes';
 
 const initialState = {
   characterSheet : defaultCharacterSheet,
-  classes: defaultClasses
+  classes: defaultClasses,
+  names: defaultClasses[0].names
 }; //default values
 
 
 const DungeonworldApp = (state = initialState, action) => {
   let ret = {
     characterSheet : characterSheetChange(state.characterSheet, action),
-    classes: defaultClasses
+    classes: defaultClasses,
+    names: namesChange(state.names, action)
   };
   return ret;
 };

@@ -1,4 +1,4 @@
-import {defaultClasses} from './reducers/Classes';
+import { defaultClasses } from './reducers/Classes';
 
 class Utils {
   static getClassFromId(id) {
@@ -8,6 +8,10 @@ class Utils {
       }
     }
     return false;
+  }
+
+  static getClasses() {
+    return defaultClasses;
   }
 }
 
