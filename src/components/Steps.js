@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import ClassesContainer from '../containers/ClassesContainer';
 import NamesContainer from '../containers/NamesContainer';
 import RacesContainer from '../containers/RacesContainer';
+import LooksContainer from '../containers/LooksContainer';
 
 class Steps extends Component {
   render(){
@@ -11,6 +12,7 @@ class Steps extends Component {
         <ClassesContainer />
         <NamesContainer />
         <RacesContainer />
+        <LooksContainer />
       </div>
     )
   }

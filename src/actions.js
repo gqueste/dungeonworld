@@ -18,3 +18,11 @@ export const onRaceChange = (race) => {
     race
   }
 };
+
+export const onLookSelect = (look, row) => {
+  return {
+    type: 'SELECT_LOOK',
+    look,
+    row
+  }
+};

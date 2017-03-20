@@ -22,6 +22,36 @@ export const defaultClasses = [
         id: 'chat',
         label: 'Chat'
       }
+    ],
+    looks: [
+      [
+        {
+          id: 'blueeyes',
+          label: 'Yeux Bleus'
+        },
+        {
+          id: 'browneyes',
+          label: 'Yeux Marron'
+        },
+        {
+          id: 'greeneyes',
+          label: 'Yeux Verts'
+        },
+      ],
+      [
+        {
+          id: 'buff',
+          label: 'Plein de muscles'
+        },
+        {
+          id: 'nobuff',
+          label: 'Pas de muscles'
+        },
+        {
+          id: 'efhyuebe',
+          label: 'ededed'
+        },
+      ]
     ]
   },
   {
@@ -37,6 +67,36 @@ export const defaultClasses = [
         id: 'ironman',
         label: 'Iron Man'
       }
+    ],
+    looks: [
+      [
+        {
+          id: 'beautiful',
+          label: 'Beau'
+        },
+        {
+          id: 'notbeautiful',
+          label: 'Moche'
+        },
+        {
+          id: 'meh',
+          label: 'Pas terrible'
+        },
+      ],
+      [
+        {
+          id: 'mad',
+          label: 'Fou'
+        },
+        {
+          id: 'bearded',
+          label: 'Barbu'
+        },
+        {
+          id: 'notbearded',
+          label: 'Pas barbu'
+        },
+      ]
     ]
   }
 ];

@@ -3,6 +3,7 @@ import React, {Component} from 'react';
 class CharacterSheet extends Component {
 
   render(){
+    console.log(this.props.characterSheet.looks);
     const race = () => {
       if(this.props.characterSheet.race){
         return (<p>{this.props.characterSheet.race}</p>);
