@@ -4,7 +4,11 @@ export const looksChange = (looks, action) => {
   switch (action.type) {
     case 'CHANGE_CLASS':
       const currentClass = Utils.getClassFromId(action.id);
-      return currentClass.looks;
+      return currentClass.looks.map(look => look.map((choice) => {
+          choice.selected = false;
+          return choice;
+        })
+      );
     case 'SELECT_LOOK':
       return updateLooks(looks, action.look);
     default:
