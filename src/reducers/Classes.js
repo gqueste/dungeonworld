@@ -51,6 +51,10 @@ export const defaultClasses = [
           id: 'efhyuebe',
           label: 'ededed'
         },
+        {
+          id: 'fourthOne',
+          label: 'Quatrième'
+        }
       ]
     ]
   },

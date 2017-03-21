@@ -26,3 +26,10 @@ export const onLookSelect = (look, row) => {
     row
   }
 };
+
+export const onStatsSelect = (stat) => {
+  return {
+    type: 'CHANGE_STATS',
+    stat
+  }
+}

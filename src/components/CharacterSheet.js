@@ -26,12 +26,29 @@ class CharacterSheet extends Component {
         );
       }
     };
+    const stats = () => {
+      const statsList = Object.keys(this.props.characterSheet.stats).map((stat) => {
+        const currentStat = this.props.characterSheet.stats[stat];
+        return (
+          <li key={currentStat.id}>{currentStat.label}{currentStat.value ? ' : ' + currentStat.value : ''}</li>
+        )
+      });
+      return (
+        <div>
+          <p>Stats</p>
+          <ul>
+            {statsList}
+          </ul>
+        </div>
+      );
+    }
     return(
       <div>
         <p>{this.props.characterSheet.description}</p>
         <p>{this.props.characterSheet.name}</p>
         {race()}
         {looks()}
+        {stats()}
       </div>
     )
   }

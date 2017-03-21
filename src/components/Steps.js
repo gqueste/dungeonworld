@@ -10,8 +10,8 @@ class Steps extends Component {
       <div>
         <h2 className="text-center">Création de personnages</h2>
         <ClassesContainer />
-        <NamesContainer />
         <RacesContainer />
+        <NamesContainer />
         <LooksContainer />
       </div>
     )

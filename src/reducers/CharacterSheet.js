@@ -4,7 +4,8 @@ export const defaultCharacterSheet = {
   description: Utils.getClasses()[0].description,
   name: Utils.getClasses()[0].names[0].label,
   race: Utils.getClasses()[0].races ? Utils.getClasses()[0].races[0].label : null,
-  looks: []
+  looks: [],
+  stats: Utils.getStats()
 };
 
 export const characterSheetChange = (characterSheet, action) => {
