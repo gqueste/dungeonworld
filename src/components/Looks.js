@@ -4,7 +4,7 @@ class Looks extends Component {
 
   onSelect(choice, row) {
     choice.row = row;
-    return this.props.onSelect.bind(this, choice);
+    return this.props.onSelect(choice);
   }
 
   render(){
@@ -12,7 +12,7 @@ class Looks extends Component {
       return look.map((choice, index) => {
         return (
           <div className={'col-md-' + (12 / look.length)} key={index}>
-            <button className={'btn btn-block ' + (choice.selected ? 'btn-primary' : 'btn-default')} onClick={this.onSelect(choice, row)}>{choice.label}</button>
+            <button className={'btn btn-block ' + (choice.selected ? 'btn-primary' : 'btn-default')} onClick={() => {this.onSelect(choice, row)}}>{choice.label}</button>
           </div>
         )
       });

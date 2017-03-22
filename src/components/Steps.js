@@ -3,6 +3,7 @@ import ClassesContainer from '../containers/ClassesContainer';
 import NamesContainer from '../containers/NamesContainer';
 import RacesContainer from '../containers/RacesContainer';
 import LooksContainer from '../containers/LooksContainer';
+import StatsContainer from '../containers/StatsContainer';
 
 class Steps extends Component {
   render(){
@@ -13,6 +14,7 @@ class Steps extends Component {
         <RacesContainer />
         <NamesContainer />
         <LooksContainer />
+        <StatsContainer />
       </div>
     )
   }
