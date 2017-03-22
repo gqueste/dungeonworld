@@ -42,6 +42,19 @@ class Utils {
       }
     };
   }
+
+  static updateStats(stats, targetStat, value) {
+    let ret = {};
+    for(let currentStat in stats) {
+      ret[currentStat] = stats[currentStat];
+      if(ret[currentStat].id === targetStat.id){
+        ret[currentStat].value = ret[currentStat].value === value ? null : value;
+      } else {
+        ret[currentStat].value = ret[currentStat].value === value ? null : ret[currentStat].value;
+      }
+    }
+    return ret;
+  }
 }
 
 export default Utils;

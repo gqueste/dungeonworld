@@ -47,20 +47,8 @@ export const characterSheetChange = (characterSheet, action) => {
         looks
       });
     case 'CHANGE_STATS':
-      const stats = {};
-      for(let currentStat in characterSheet.stats) {
-        if(currentStat !== action.stat.id) {
-          if(characterSheet.stats[currentStat].value === action.value){
-            characterSheet.stats[currentStat].value = null;
-          }
-          stats[currentStat] = characterSheet.stats[currentStat];
-        } else {
-          stats[currentStat] = characterSheet.stats[currentStat];
-          stats[currentStat].value = stats[currentStat].value === action.value ? null : action.value;
-        }
-      }
       return Object.assign({}, characterSheet, {
-        stats
+        stats: Utils.updateStats(characterSheet.stats, action.stat, action.value)
       });
     default:
       return characterSheet;
