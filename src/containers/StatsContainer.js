@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { onStatsSelect } from '../actions';
+import { onStatsSelect, onResetStats } from '../actions';
 import Stats from '../components/Stats';
 
 
@@ -13,6 +13,9 @@ const mapDispatchToProps = (dispatch) => {
   return {
     onSelect: (stat, value) => {
       dispatch(onStatsSelect(stat, value));
+    },
+    onResetStats: () => {
+      dispatch(onResetStats());
     }
   }
 };

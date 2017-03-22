@@ -56,7 +56,8 @@ export const defaultClasses = [
           label: 'Quatrième'
         }
       ]
-    ]
+    ],
+    baseHP : 8
   },
   {
     id: 'clerc',
@@ -101,6 +102,7 @@ export const defaultClasses = [
           label: 'Pas barbu'
         },
       ]
-    ]
+    ],
+    baseHP: 5
   }
 ];

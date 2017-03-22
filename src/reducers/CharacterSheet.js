@@ -47,9 +47,39 @@ export const characterSheetChange = (characterSheet, action) => {
         looks
       });
     case 'CHANGE_STATS':
+      const stats = Utils.updateStats(characterSheet.stats, action.stat, action.value);
+      for(let currentStat in stats) {
+        const stat = stats[currentStat];
+        switch (stat.value) {
+          case 16:
+            stat.modifier = '+2';
+            break;
+          case 15:
+            stat.modifier = '+1';
+            break;
+          case 13:
+            stat.modifier = '+1';
+            break;
+          case 12:
+            stat.modifier = '0';
+            break;
+          case 9:
+            stat.modifier = '0';
+            break;
+          case 8:
+            stat.modifier = '-1';
+            break;
+          default:
+            stat.modifier = null;
+        }
+      }
       return Object.assign({}, characterSheet, {
-        stats: Utils.updateStats(characterSheet.stats, action.stat, action.value)
+        stats
       });
+    case 'RESET_STATS':
+    return Object.assign({}, characterSheet, {
+      stats : Utils.getStats()
+    });
     default:
       return characterSheet;
   }

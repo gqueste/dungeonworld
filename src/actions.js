@@ -34,3 +34,9 @@ export const onStatsSelect = (stat, value) => {
     value
   }
 }
+
+export const onResetStats = () => {
+  return {
+    type: 'RESET_STATS'
+  }
+}
