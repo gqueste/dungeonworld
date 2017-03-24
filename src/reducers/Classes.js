@@ -369,47 +369,327 @@ export const defaultClasses = [
   {
     id: 'clerc',
     label: 'Clerc',
-    description: 'description du clerc',
-    names: [
+    description: `Les poèmes disent que la vie d'aventurier est une route pavée de gloire, de fortune et de combats. Les histoires racontées dans toutes les tavernes de campagne doivent bien avoir un fond de vérité, n'est ce pas ? Les chansons qui inspirent les humbles comme les têtes couronnées, qui calment les bêtes sauvages ou rendent les hommes furieux doivent bien venir de quelque part. Voici le barde. Vous. La voix enjôleuse et la répartie facile.<br>Vous. Chanteur et conteur hors pair.<br>N’importe quel ménestrel peut réciter une fable, seul un vrai barde peut la vivre. Enfilez vos bottes, noble orateur. Aiguisez cette dague discrète et relevez le défi. Quelqu’un doit se trouver là, coude à coude avec les gros bras, les voyous et la graine de héros. Qui, mieux que vous, pour relater vos exploits ? Personne`,
+    races: [
       {
-        id: 'professeurxavier',
-        label: 'Professeur Xavier'
+        id: `elfe`,
+        label: `Elfe`,
+        names : [
+          {
+            id: `astrafel`,
+            label: `Astrafel`
+          },
+          {
+            id: `daelwyn`,
+            label: `Daelwyn`
+          },
+          {
+            id: `feliana`,
+            label: `Feliana`
+          },
+          {
+            id: `damarra`,
+            label: `Damarra`
+          },
+          {
+            id: `sistranalle`,
+            label: `Sistranalle`
+          },
+          {
+            id: `pendrell`,
+            label: `Pendrell`
+          },
+          {
+            id: `melliandre`,
+            label: `Melliandre`
+          },
+          {
+            id: `dagoliir`,
+            label: `Dagoliir`
+          }
+        ],
+        startingActions: [
+          {
+            id: `elfe`,
+            title: `Elfe`,
+            description: `Lorsque vous arrivez à un endroit important (à vous de décider), vous pouvez demander au MJ de vous raconter un fait de l’histoire de ce lieu.`
+          }
+        ]
       },
       {
-        id: 'ironman',
-        label: 'Iron Man'
+        id: `humain`,
+        label: `Humain`,
+        names : [
+          {
+            id: `baldric`,
+            label: `Baldric`
+          },
+          {
+            id: `leena`,
+            label: `Leena`
+          },
+          {
+            id: `dunwick`,
+            label: `Dunwick`
+          },
+          {
+            id: `willem`,
+            label: `Willem`
+          },
+          {
+            id: `edungeonworldyn`,
+            label: `EDungeon Worldyn`
+          },
+          {
+            id: `florian`,
+            label: `Florian`
+          },
+          {
+            id: `angélique`,
+            label: `Angélique`
+          },
+          {
+            id: `quorra`,
+            label: `Quorra`
+          },
+          {
+            id: `charlotte`,
+            label: `Charlotte`
+          },
+          {
+            id: `lili`,
+            label: `Lili`
+          },
+          {
+            id: `raymonde`,
+            label: `Raymonde`
+          },
+          {
+            id: `cassandra`,
+            label: `Cassandra`
+          }
+        ],
+        startingActions: [
+          {
+            id: `humain`,
+            title: `Humain`,
+            description: `Quand vous arrivez pour la première fois dans un lieu civilisé, quelqu’un qui respecte les lois de l’hospitalité envers les ménestrels vous hébergera.`
+          }
+        ]
       }
     ],
     looks: [
       [
         {
-          id: 'beautiful',
-          label: 'Beau'
+          id: 'oeilcomplice',
+          label: 'Œil complice'
         },
         {
-          id: 'notbeautiful',
-          label: 'Moche'
+          id: 'regardardent',
+          label: 'Regard ardent'
         },
         {
-          id: 'meh',
-          label: 'Pas terrible'
+          id: 'regardjoyeux',
+          label: 'Regard joyeux'
         },
       ],
       [
         {
-          id: 'mad',
-          label: 'Fou'
+          id: 'coiffuresophistiquee',
+          label: 'Coiffure sophistiquée'
         },
         {
-          id: 'bearded',
-          label: 'Barbu'
+          id: 'echevele',
+          label: 'Echevelé'
         },
         {
-          id: 'notbearded',
-          label: 'Pas barbu'
+          id: 'casquettealamode',
+          label: 'Casquette à la mode'
+        },
+      ],
+      [
+        {
+          id: 'parure',
+          label: 'Parure'
+        },
+        {
+          id: 'vetementsdevoyages',
+          label: 'Vêtements de voyages'
+        },
+        {
+          id: 'fripes',
+          label: 'Fripes'
+        },
+      ],
+      [
+        {
+          id: 'enforme',
+          label: 'En forme'
+        },
+        {
+          id: 'biennourri',
+          label: 'Bien nourri'
+        },
+        {
+          id: 'mince',
+          label: 'Mince'
         },
       ]
     ],
-    baseHP: 5
+    baseHP: 6,
+    damage: 6,
+    startingActions: [
+      {
+        id: `artsarcaniques`,
+        title: `Arts arcaniques`,
+        description: `Quand la magie de votre spectacle se matérialise, choisissez un allié et un effet :<ul><li>Soignez 1d8 dégâts.</li><li>Ajoutez 1d4 aux prochains dégâts qu’il inflige.</li><li>Son esprit est libéré d’un enchantement.</li><li>La prochaine fois qu’on l’aide, il reçoit +2 au lieu de +1.</li><ul>Puis, lancez 2d6+CHA. Sur 10+, l’allié bénéficie de l’effet choisi. Sur 7-9, votre magie fonctionne mais vous attirez une attention malvenue ou votre sort se propage à d’autres cibles (au choix du MJ) et les affecte également.`
+      },
+      {
+        id: `unhavredanslatempete`,
+        title: `Un havre dans la tempête`,
+        description: `Lorsque vous revenez dans un lieu civilisé que vous avez déjà visité, indiquez au MJ à quand remonte votre dernier passage. Il vous dira en quoi ce lieu a changé depuis.`
+      },
+      {
+        id: `legendesdesbardes`,
+        title: `Légendes des bardes`,
+        description: `Choisissez un domaine de connaissance. Lorsque vous découvrez ou rencontrez pour la première fois un objet, un lieu ou une créature importants de votre domaine de connaissance, vous pouvez poser une question à son sujet au MJ. Le MJ répondra sincèrement. Il peut alors vous demander dans quel récit, quelle chanson ou légende, vous avez trouvé cette information.`,
+        choices : [
+          {
+            id: `sortsmagie`,
+            title: `Sorts & magie`
+          },
+          {
+            id: `mortsetmortsvivants`,
+            title: `Morts et morts-vivants`
+          },
+          {
+            id: `grandsevenementsdumondeconnu`,
+            title: `Grands évènements du monde connu`
+          },
+          {
+            id: `bestiairedescreaturesinhabituelles`,
+            title: `Bestiaire des créatures inhabituelles`
+          },
+          {
+            id: `spheresplanaires`,
+            title: `Sphères planaires`
+          },
+          {
+            id: `legendesdesherosdupasse`,
+            title: `Légendes des héros du passé`
+          },
+          {
+            id: `lesdieuxetleursserviteurs`,
+            title: `Les dieux et leurs serviteurs`
+          }
+        ]
+      },
+      {
+        id: `charmantetsincere`,
+        title: `Charmant et sincère`,
+        description: `Quand vous discutez franchement avec quelqu’un, vous pouvez poser une question de la liste ci-dessous à son joueur (MJ compris). Il doit répondre sincèrement et peut à son tour vous poser une question de la liste, à laquelle vous devez répondre sincèrement.<ul><li>Qui sers-tu ?</li><li>Que souhaiterais-tu que je fasse ?</li><li>Comment pourrais-je t’amener à (faire)_______ ?</li><li>Que ressens-tu vraiment en ce moment ?</li><li>Que désires-tu le plus ?</li></ul>`
+      }
+    ],
+    alinements: [
+      {
+        id: `bon`,
+        title: `Bon`,
+        description: `Exercer son art pour aider autrui.`
+      },
+      {
+        id: `neutre`,
+        title: `Neutre`,
+        description: `Désamorcer une situation tendue ou éviter un conflit.`
+      },
+      {
+        id: `chaotique`,
+        title: `Chaotique`,
+        description: `Pousser autrui à une action décisive et irréfléchie.`
+      }
+    ],
+    maxWeight: 9,
+    equipments: [
+      {
+        label: `Des rations (5 utilisations, 1 poids)`
+      },
+      {
+        choices: [
+          {
+            label: `Mandoline de votre père, réparée`
+          },
+          {
+            label: `Splendide luth, cadeau d’une noble personne`
+          },
+          {
+            label: `Flûte de votre première sérénade`
+          },
+          {
+            label: `Cor, volé`
+          },
+          {
+            label: `Violon, jamais servi`
+          },
+          {
+            label: `Livret de chants écrit dans une langue oubliée`
+          }
+        ]
+      },
+      {
+        choices: [
+          {
+            label: `Armure de cuir (1 armure, 1 poids)`
+          },
+          {
+            label: `Habits tape-à-l’œil (0 poids)`
+          }
+        ]
+      },
+      {
+        choices: [
+          {
+            label: `Rapière de duelliste (proche, précis, 2 poids)`
+          },
+          {
+            label: `Epée courte (proche, 1 poids), arc rudimentaire (courte, 2 poids), flèches (3 munitions, 1 poids)`
+          }
+        ]
+      },
+      {
+        choices: [
+          {
+            label: `Sac d’aventurier (1 poids)`
+          },
+          {
+            label: `Bandages (0 poids)`
+          },
+          {
+            label: `Herbe de Halfelin (0 poids)`
+          },
+          {
+            label: `3 Po`
+          }
+        ]
+      }
+    ],
+    bonds: [ 
+      {
+        label: `Ce n’est pas ma première aventure avec ___.`
+      },
+      {
+        label: `J’ai chanté des histoires sur ___ bien avant de le connaître.`
+      },
+      {
+        label: `___ est souvent l’objet de mes plaisanteries.`
+      },
+      {
+        label: `J’écris une ballade sur les aventures de ___.`
+      },
+      {
+        label: `___ m’a confié un secret.`
+      },
+      {
+        label: `___ n’a pas confiance en moi et à juste titre.`
+      }
+    ]
   }
 ];
