@@ -367,8 +367,8 @@ export const defaultClasses = [
     ]
   },
   {
-    id: 'clerc',
-    label: 'Clerc',
+    id: 'barde',
+    label: 'Barde',
     description: `Les poèmes disent que la vie d'aventurier est une route pavée de gloire, de fortune et de combats. Les histoires racontées dans toutes les tavernes de campagne doivent bien avoir un fond de vérité, n'est ce pas ? Les chansons qui inspirent les humbles comme les têtes couronnées, qui calment les bêtes sauvages ou rendent les hommes furieux doivent bien venir de quelque part. Voici le barde. Vous. La voix enjôleuse et la répartie facile.<br>Vous. Chanteur et conteur hors pair.<br>N’importe quel ménestrel peut réciter une fable, seul un vrai barde peut la vivre. Enfilez vos bottes, noble orateur. Aiguisez cette dague discrète et relevez le défi. Quelqu’un doit se trouver là, coude à coude avec les gros bras, les voyous et la graine de héros. Qui, mieux que vous, pour relater vos exploits ? Personne`,
     races: [
       {
@@ -671,7 +671,7 @@ export const defaultClasses = [
         ]
       }
     ],
-    bonds: [ 
+    bonds: [
       {
         label: `Ce n’est pas ma première aventure avec ___.`
       },

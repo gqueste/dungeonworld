@@ -55,6 +55,13 @@ class Utils {
     }
     return ret;
   }
+
+  static getDefaultNamesForClass(classe) {
+    if(classe.names) {
+      return classe.names;
+    }
+    return classe.races[0].names;
+  }
 }
 
 export default Utils;
