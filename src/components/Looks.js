@@ -11,8 +11,8 @@ class Looks extends Component {
     const choicesList = (look, row) => {
       return look.map((choice, index) => {
         return (
-          <div className={'col-md-' + (12 / look.length)} key={index}>
-            <button className={'btn btn-block ' + (choice.selected ? 'btn-primary' : 'btn-default')} onClick={() => {this.onSelect(choice, row)}}>{choice.label}</button>
+          <div className={'col-xs-' + (12 / look.length)} key={index}>
+            <button className={'btn look-button btn-block ' + (choice.selected ? 'btn-primary' : 'btn-default')} onClick={() => {this.onSelect(choice, row)}}>{choice.label}</button>
           </div>
         )
       });

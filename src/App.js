@@ -7,10 +7,10 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className='text-center'>Dungeon World</h1>
-        <div className='col-md-6'>
+        <div className='col-xs-6'>
           <Steps />
         </div>
-        <div className='col-md-6'>
+        <div className='col-xs-6'>
           <CharacterSheetContainer />
         </div>
       </div>

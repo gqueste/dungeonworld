@@ -30,7 +30,7 @@ class CharacterSheet extends Component {
       const statsList = Object.keys(this.props.characterSheet.stats).map((stat) => {
         const currentStat = this.props.characterSheet.stats[stat];
         return (
-          <div className='col-md-2' key={currentStat.id}>
+          <div className='col-xs-2' key={currentStat.id}>
             <p><strong>{currentStat.label}</strong></p>
             <p>{currentStat.value}</p>
             <p>{currentStat.modifier}</p>
