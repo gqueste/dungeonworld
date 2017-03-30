@@ -2,10 +2,11 @@ import Utils from '../Utils';
 
 export const defaultCharacterSheet = {
   description: Utils.getClasses()[0].description,
-  name: Utils.getDefaultNamesForClass(Utils.getClasses()[0])[0].label,
+  name: Utils.getDefaultNamesForClass(Utils.getClasses()[0].id)[0].label,
   race: Utils.getClasses()[0].races ? Utils.getClasses()[0].races[0].label : null,
   looks: [],
-  stats: Utils.getStats()
+  stats: Utils.getStats(),
+  id: Utils.getClasses()[0].id
 };
 
 export const characterSheetChange = (characterSheet, action) => {
@@ -14,9 +15,10 @@ export const characterSheetChange = (characterSheet, action) => {
       const currentClass = Utils.getClassFromId(action.id);
       return Object.assign({}, characterSheet, {
         description: currentClass.description,
-        name: Utils.getDefaultNamesForClass(currentClass)[0].label,
+        name: Utils.getDefaultNamesForClass(currentClass.id)[0].label,
         race: currentClass.races ? currentClass.races[0].label : null,
-        looks: []
+        looks: [],
+        id: currentClass.id
       });
     case 'CHANGE_NAME':
       return Object.assign({}, characterSheet, {
@@ -24,7 +26,8 @@ export const characterSheetChange = (characterSheet, action) => {
       });
     case 'CHANGE_RACE':
       return Object.assign({}, characterSheet, {
-        race: action.race
+        race: action.race,
+        name: Utils.getNamesForRace(characterSheet.id, action.race)[0].label
       });
     case 'SELECT_LOOK':
       const looks = [];

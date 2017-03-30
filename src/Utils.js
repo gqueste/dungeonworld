@@ -56,11 +56,20 @@ class Utils {
     return ret;
   }
 
-  static getDefaultNamesForClass(classe) {
-    if(classe.names) {
-      return classe.names;
+  static getDefaultNamesForClass(classId) {
+    const currentClass = Utils.getClassFromId(classId)
+    if(currentClass.names) {
+      return currentClass.names;
     }
-    return classe.races[0].names;
+    return currentClass.races[0].names;
+  }
+
+  static getNamesForRace(classId, raceLabel) {
+    const currentClass = Utils.getClassFromId(classId)
+    if(currentClass.names) { // No specific names for race
+      return currentClass.names
+    }
+    return currentClass.races.find(race => race.label === raceLabel).names;
   }
 }
 

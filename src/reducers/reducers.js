@@ -20,7 +20,7 @@ const DungeonworldApp = (state = initialState, action) => {
   let ret = {
     characterSheet : characterSheetChange(state.characterSheet, action),
     classes: defaultClasses,
-    names: namesChange(state.names, action),
+    names: namesChange(state.names, action, state.characterSheet.id),
     races: racesChange(state.races, action),
     looks: looksChange(state.looks, action),
     stats: statsChange(state.stats, action)
