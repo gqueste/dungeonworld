@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import ClassesContainer from '../containers/ClassesContainer';
 import NamesContainer from '../containers/NamesContainer';
+import TitlesContainer from '../containers/TitlesContainer';
 import RacesContainer from '../containers/RacesContainer';
 import LooksContainer from '../containers/LooksContainer';
 import StatsContainer from '../containers/StatsContainer';
@@ -13,6 +14,7 @@ class Steps extends Component {
         <ClassesContainer />
         <RacesContainer />
         <NamesContainer />
+        <TitlesContainer />
         <LooksContainer />
         <StatsContainer />
       </div>

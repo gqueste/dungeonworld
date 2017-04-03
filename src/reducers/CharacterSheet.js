@@ -3,6 +3,7 @@ import Utils from '../Utils';
 export const defaultCharacterSheet = {
   description: Utils.getClasses()[0].description,
   name: Utils.getDefaultNamesForClass(Utils.getClasses()[0].id)[0].label,
+  title: Utils.getClasses()[0].titles ? Utils.getClasses()[0].titles[0].label: null,
   race: Utils.getClasses()[0].races ? Utils.getClasses()[0].races[0].label : null,
   looks: [],
   stats: Utils.getStats(),
@@ -16,6 +17,7 @@ export const characterSheetChange = (characterSheet, action) => {
       return Object.assign({}, characterSheet, {
         description: currentClass.description,
         name: Utils.getDefaultNamesForClass(currentClass.id)[0].label,
+        title: currentClass.titles ? currentClass.titles[0].label: null,
         race: currentClass.races ? currentClass.races[0].label : null,
         looks: [],
         id: currentClass.id
@@ -23,6 +25,10 @@ export const characterSheetChange = (characterSheet, action) => {
     case 'CHANGE_NAME':
       return Object.assign({}, characterSheet, {
         name: action.name
+      });
+    case 'CHANGE_TITLE':
+      return Object.assign({}, characterSheet, {
+        title: action.title
       });
     case 'CHANGE_RACE':
       return Object.assign({}, characterSheet, {

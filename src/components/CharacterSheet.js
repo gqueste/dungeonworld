@@ -8,6 +8,11 @@ class CharacterSheet extends Component {
         return (<p>{this.props.characterSheet.race}</p>);
       }
     };
+    const title = () => {
+      if(this.props.characterSheet.title) {
+        return (<p>{this.props.characterSheet.title}</p>)
+      }
+    }
     const looks = () => {
       const looksList = this.props.characterSheet.looks.map((look) => {
         return (
@@ -51,6 +56,7 @@ class CharacterSheet extends Component {
         <p>{this.props.characterSheet.description}</p>
         {race()}
         <p>{this.props.characterSheet.name}</p>
+        {title()}
         {looks()}
         {stats()}
       </div>

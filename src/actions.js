@@ -12,6 +12,13 @@ export const onNameChange = (name) => {
   }
 };
 
+export const onTitleChange = (title) => {
+  return {
+    type: 'CHANGE_TITLE',
+    title
+  }
+};
+
 export const onRaceChange = (race) => {
   return {
     type: 'CHANGE_RACE',
