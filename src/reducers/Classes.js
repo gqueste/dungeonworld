@@ -111,7 +111,6 @@ export const defaultClasses = [
         label: 'Halfelin'
       }
     ],
-    // TODO : Titres pour le barbare
     titles: [
       {
         id: 'glorieux',
@@ -233,7 +232,6 @@ export const defaultClasses = [
       ]
     ],
     baseHP : 8,
-    //TODO
     damage: 10,
     //TODO
     startingActions : [
@@ -317,7 +315,6 @@ export const defaultClasses = [
         description: `Enseigner les coutumes de votre peuple à quelqu'un.`
       }
     ],
-    //TODO
     maxWeight: 9,
     //TODO
     equipments: [

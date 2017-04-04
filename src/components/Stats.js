@@ -30,7 +30,7 @@ class Stats extends Component {
     return(
       <div>
         <div>
-          <h3>Choisissez vos statistiques <a href='#' onClick={this.props.onResetStats}><i className="fa fa-undo text-right" aria-hidden="true"></i></a></h3>
+          <h3>Choisissez vos statistiques <a href='javascript:void(0)' onClick={this.props.onResetStats}><i className="fa fa-undo text-right" aria-hidden="true"></i></a></h3>
         </div>
         <div className='form-horizontal'>
           <ul className='list-group'>

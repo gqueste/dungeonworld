@@ -59,6 +59,9 @@ class CharacterSheet extends Component {
         {title()}
         {looks()}
         {stats()}
+        <p>HP: {this.props.characterSheet.baseHP}</p>
+        <p>Damage: d{this.props.characterSheet.damage}</p>
+        <p>Max Weight: {this.props.characterSheet.maxWeight}</p>
       </div>
     )
   }
