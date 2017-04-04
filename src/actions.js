@@ -47,3 +47,10 @@ export const onResetStats = () => {
     type: 'RESET_STATS'
   }
 }
+
+export const onEquipmentSelect = (equipment) => {
+  return {
+    type: 'EQUIPMENT_SELECT',
+    equipment
+  }
+}

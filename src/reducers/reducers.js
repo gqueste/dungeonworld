@@ -5,6 +5,7 @@ import { defaultClasses } from './Classes';
 import { racesChange } from './Races';
 import { looksChange } from './Looks';
 import { statsChange } from './Stats';
+import { equipmentsChange } from './Equipments';
 import Utils from '../Utils';
 
 const initialState = {
@@ -14,7 +15,8 @@ const initialState = {
   titles: defaultClasses[0].titles,
   races: defaultClasses[0].races,
   looks: defaultClasses[0].looks,
-  stats: Utils.getStats()
+  stats: Utils.getStats(),
+  equipments: defaultClasses[0].equipments
 }; //default values
 
 
@@ -26,7 +28,8 @@ const DungeonworldApp = (state = initialState, action) => {
     titles: titlesChange(state.titles, action),
     races: racesChange(state.races, action),
     looks: looksChange(state.looks, action),
-    stats: statsChange(state.stats, action)
+    stats: statsChange(state.stats, action),
+    equipments: equipmentsChange(state.equipments, action)
   };
   return ret;
 };

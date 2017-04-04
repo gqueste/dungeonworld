@@ -5,6 +5,7 @@ import TitlesContainer from '../containers/TitlesContainer';
 import RacesContainer from '../containers/RacesContainer';
 import LooksContainer from '../containers/LooksContainer';
 import StatsContainer from '../containers/StatsContainer';
+import EquipmentsContainer from '../containers/EquipmentsContainer';
 
 class Steps extends Component {
   render(){
@@ -17,6 +18,7 @@ class Steps extends Component {
         <TitlesContainer />
         <LooksContainer />
         <StatsContainer />
+        <EquipmentsContainer />
       </div>
     )
   }
