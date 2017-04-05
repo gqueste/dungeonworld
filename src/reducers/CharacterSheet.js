@@ -10,7 +10,8 @@ export const defaultCharacterSheet = {
   id: Utils.getClasses()[0].id,
   baseHP: Utils.getClasses()[0].baseHP,
   damage: Utils.getClasses()[0].damage,
-  maxWeight: Utils.getClasses()[0].maxWeight
+  maxWeight: Utils.getClasses()[0].maxWeight,
+  equipments: Utils.getDefaultEquipments(Utils.getClasses()[0])
 };
 
 export const characterSheetChange = (characterSheet, action) => {
@@ -26,7 +27,8 @@ export const characterSheetChange = (characterSheet, action) => {
         id: currentClass.id,
         baseHP: currentClass.baseHP,
         damage: currentClass.damage,
-        maxWeight: currentClass.maxWeight
+        maxWeight: currentClass.maxWeight,
+        equipments: Utils.getDefaultEquipments(currentClass)
       });
     case 'CHANGE_NAME':
       return Object.assign({}, characterSheet, {

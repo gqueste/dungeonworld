@@ -50,7 +50,25 @@ class CharacterSheet extends Component {
           </div>
         </div>
       );
-    }
+    };
+    const equipments = () => {
+      const equipmentsList = this.props.characterSheet.equipments.map((equipment, index) => {
+        return (
+          <li key={`equipment${index}`}>{equipment}</li>
+        )
+      });
+
+      if(this.props.characterSheet.equipments.length > 0){
+        return (
+          <div>
+            <p>Equipements</p>
+            <ul>
+              {equipmentsList}
+            </ul>
+          </div>
+        );
+      }
+    };
     return(
       <div>
         <p>{this.props.characterSheet.description}</p>
@@ -62,6 +80,7 @@ class CharacterSheet extends Component {
         <p>HP: {this.props.characterSheet.baseHP}</p>
         <p>Damage: d{this.props.characterSheet.damage}</p>
         <p>Max Weight: {this.props.characterSheet.maxWeight}</p>
+        {equipments()}
       </div>
     )
   }

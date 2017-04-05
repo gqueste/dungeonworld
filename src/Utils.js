@@ -71,6 +71,18 @@ class Utils {
     }
     return currentClass.races.find(race => race.label === raceLabel).names;
   }
+
+  static getDefaultEquipments(classe) {
+    let ret = [];
+    for(let equipment of classe.equipments){
+      if(equipment.label) {
+        ret.push(equipment.label);
+      } else if(equipment.choices) {
+        ret.push(equipment.choices[0].label);
+      }
+    }
+    return ret;
+  }
 }
 
 export default Utils;
