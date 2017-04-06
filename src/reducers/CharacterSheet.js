@@ -11,6 +11,7 @@ export const defaultCharacterSheet = {
   baseHP: Utils.getClasses()[0].baseHP,
   damage: Utils.getClasses()[0].damage,
   maxWeight: Utils.getClasses()[0].maxWeight,
+  alignment: Utils.getClasses()[0].alignments[0],
   equipments: Utils.getDefaultEquipments(Utils.getClasses()[0])
 };
 
@@ -28,6 +29,7 @@ export const characterSheetChange = (characterSheet, action) => {
         baseHP: currentClass.baseHP,
         damage: currentClass.damage,
         maxWeight: currentClass.maxWeight,
+        alignment: currentClass.alignments[0],
         equipments: Utils.getDefaultEquipments(currentClass)
       });
     case 'CHANGE_NAME':
@@ -62,6 +64,10 @@ export const characterSheetChange = (characterSheet, action) => {
 
       return Object.assign({}, characterSheet, {
         looks
+      });
+    case 'CHANGE_ALIGNMENT':
+      return Object.assign({}, characterSheet, {
+        alignment: Utils.getClassFromId(characterSheet.id).alignments.find(a => a.title === action.alignment) 
       });
     case 'CHANGE_STATS':
       const stats = Utils.updateStats(characterSheet.stats, action.stat, action.value);

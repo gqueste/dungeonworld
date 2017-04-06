@@ -48,6 +48,13 @@ export const onResetStats = () => {
   }
 }
 
+export const onAlignmentChange = (alignment) => {
+  return {
+    type: 'CHANGE_ALIGNMENT',
+    alignment
+  }
+};
+
 export const onEquipmentSelect = (equipment) => {
   return {
     type: 'SELECT_EQUIPMENT',

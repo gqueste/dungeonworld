@@ -80,6 +80,7 @@ class CharacterSheet extends Component {
         <p>HP: {this.props.characterSheet.baseHP}</p>
         <p>Damage: d{this.props.characterSheet.damage}</p>
         <p>Max Weight: {this.props.characterSheet.maxWeight}</p>
+        <p>Alignement: {this.props.characterSheet.alignment.title} - {this.props.characterSheet.alignment.description}</p>
         {equipments()}
       </div>
     )

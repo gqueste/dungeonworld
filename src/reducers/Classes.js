@@ -303,7 +303,7 @@ export const defaultClasses = [
       }
     ],
     //TODO
-    alinements: [
+    alignments: [
       {
         id: `chaotique`,
         title: `Chaotique`,
@@ -587,7 +587,7 @@ export const defaultClasses = [
         description: `Quand vous discutez franchement avec quelqu’un, vous pouvez poser une question de la liste ci-dessous à son joueur (MJ compris). Il doit répondre sincèrement et peut à son tour vous poser une question de la liste, à laquelle vous devez répondre sincèrement.<ul><li>Qui sers-tu ?</li><li>Que souhaiterais-tu que je fasse ?</li><li>Comment pourrais-je t’amener à (faire)_______ ?</li><li>Que ressens-tu vraiment en ce moment ?</li><li>Que désires-tu le plus ?</li></ul>`
       }
     ],
-    alinements: [
+    alignments: [
       {
         id: `bon`,
         title: `Bon`,
