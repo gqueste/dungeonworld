@@ -50,7 +50,7 @@ export const onResetStats = () => {
 
 export const onEquipmentSelect = (equipment) => {
   return {
-    type: 'EQUIPMENT_SELECT',
+    type: 'SELECT_EQUIPMENT',
     equipment
   }
 }

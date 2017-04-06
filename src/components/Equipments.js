@@ -16,12 +16,12 @@ class Equipments extends Component {
 
       const choicesList = equipment.choices.map((choice, index) => {
         return (
-          <option key={`choice${index}`}>{choice.label}</option>
+          <option key={choice.label}>{choice.label}</option>
         )
       });
 
       return (
-        <select key={`select${index}`} className='form-control'>
+        <select key={`select${index}`} className='form-control' onChange={e => this.props.onSelect(e.target.value)}>
           {choicesList}
         </select>
       )

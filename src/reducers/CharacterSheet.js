@@ -94,9 +94,13 @@ export const characterSheetChange = (characterSheet, action) => {
         stats
       });
     case 'RESET_STATS':
-    return Object.assign({}, characterSheet, {
-      stats : Utils.getStats()
-    });
+      return Object.assign({}, characterSheet, {
+        stats : Utils.getStats()
+      });
+    case 'SELECT_EQUIPMENT':
+      return Object.assign({}, characterSheet, {
+        equipments : getEquipments(action.equipment, characterSheet.equipments, characterSheet.id)
+      });
     default:
       return characterSheet;
   }
@@ -107,4 +111,26 @@ function sortLooks(a, b) {
     return -1;
   }
   return 1;
+}
+
+function getEquipments(selected, equipments, classId) {
+  let ret = [];
+  const currentClass = Utils.getClassFromId(classId);
+  for(let equipment of currentClass.equipments) {
+    if(equipment.label) {
+      ret.push(equipment.label);
+    } else if(equipment.choices) {
+      if(equipment.choices.find(c => selected === c.label)) {
+        ret.push(selected);
+      } else { // si pas sélectionné, mais dans equipments, on ajoute
+        for(let choice of equipment.choices) {
+          if(equipments.find(e => e === choice.label)) {
+            ret.push(choice.label);
+            break;
+          }
+        }
+      }
+    }
+  }
+  return ret;
 }
