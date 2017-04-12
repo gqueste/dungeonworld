@@ -5,228 +5,228 @@ export const defaultClasses = [
     description: `Ceux qui t'accompagnent se disent civilisés mais ils ont inventé la servilité, l'hypocrisie et leurs cités ne sont que puanteur et maladie. Tu vas leur montrer ce que sont la liberté, la franchise de l'acier et la pureté des grands espaces.<br>Ils peuvent se contenter d'une gorgée de vin ou d'un ou deux exclaves à leur service, mais il t'en faut plus ! Ton appétit est sans fin, perpétuellement inassouvi.<br>Il te faut l'immense steppe, un rapide coursier, un faucon à ton poing et le vent dans les cheveux. Il te faut les richesses et les terres, la fortune et la gloire, écraser tes ennemis, les voir mourir devant toi et entendre les lamentations de leurs femmes.<br>Ils peuvent te combattre à cinq contre un, tenter de t'empoisonner comme des lâches qu'ils sont, passer dans ton dos pour y planter leur dague, tu les méprises. Car tout ce qui ne tue pas te rend plus fort !`,
     names: [
       {
-        id: 'gorm',
+        id: 'barbare_gorm',
         label: 'Gorm'
       },
       {
-        id: 'siyi',
+        id: 'barbare_siyi',
         label: 'Si-Yi'
       },
       {
-        id: 'priscilla',
+        id: 'barbare_priscilla',
         label: 'Priscilla'
       },
       {
-        id: 'sen',
+        id: 'barbare_sen',
         label: 'Sen'
       },
       {
-        id: 'xia',
+        id: 'barbare_xia',
         label: 'Xia'
       },
       {
-        id: 'anneira',
+        id: 'barbare_anneira',
         label: 'Anneira'
       },
       {
-        id: 'haepha',
+        id: 'barbare_haepha',
         label: 'Haepha'
       },
       {
-        id: 'lur',
+        id: 'barbare_lur',
         label: 'Lur'
       },
       {
-        id: 'shar',
+        id: 'barbare_shar',
         label: 'Shar'
       },
       {
-        id: 'korrin',
+        id: 'barbare_korrin',
         label: 'Korrin'
       },
       {
-        id: 'nkosi',
+        id: 'barbare_nkosi',
         label: 'Nkosi'
       },
       {
-        id: 'fafnir',
+        id: 'barbare_fafnir',
         label: 'Fafnir'
       },
       {
-        id: 'qua',
+        id: 'barbare_qua',
         label: 'Qua'
       },
       {
-        id: 'sacer',
+        id: 'barbare_sacer',
         label: 'Sacer'
       },
       {
-        id: 'vercingeto',
+        id: 'barbare_vercingeto',
         label: "Vercin'geto"
       },
       {
-        id: 'barbozar',
+        id: 'barbare_barbozar',
         label: 'Barbozar'
       },
       {
-        id: 'clovis',
+        id: 'barbare_clovis',
         label: 'Clovis'
       },
       {
-        id: 'frael',
+        id: 'barbare_frael',
         label: 'Frael'
       },
       {
-        id: 'thraraxes',
+        id: 'barbare_thraraxes',
         label: 'Thra-raxes'
       },
       {
-        id: 'sillius',
+        id: 'barbare_sillius',
         label: 'Sillius'
       },
       {
-        id: 'shasheena',
+        id: 'barbare_shasheena',
         label: 'Sha-Sheena'
       },
       {
-        id: 'khamisi',
+        id: 'barbare_khamisi',
         label: 'Khamisi'
       }
     ],
     races: [
       {
-        id: 'human',
+        id: 'barbare_human',
         label: 'Humain'
       },
       {
-        id: 'elfe',
+        id: 'barbare_elfe',
         label: 'Elfe'
       },
       {
-        id: 'nain',
+        id: 'barbare_nain',
         label: 'Nain'
       },
       {
-        id: 'halfelin',
+        id: 'barbare_halfelin',
         label: 'Halfelin'
       }
     ],
     titles: [
       {
-        id: 'glorieux',
+        id: 'barbare_glorieux',
         label: 'Le Glorieux'
       },
       {
-        id: 'affame',
+        id: 'barbare_affame',
         label: "L'Affamé"
       },
       {
-        id: 'irascible',
+        id: 'barbare_irascible',
         label: "L'Irascible"
       },
       {
-        id: 'invaincu',
+        id: 'barbare_invaincu',
         label: "L'Invaincu"
       },
       {
-        id: 'vorace',
+        id: 'barbare_vorace',
         label: 'Le Vorace'
       },
       {
-        id: 'broyeur',
+        id: 'barbare_broyeur',
         label: "Le Broyeur d'Ennemis"
       },
       {
-        id: 'briseurdos',
+        id: 'barbare_briseurdos',
         label: "Le Briseur d'Os"
       },
       {
-        id: 'joyeux',
+        id: 'barbare_joyeux',
         label: 'Le Joyeux'
       },
       {
-        id: 'melancolique',
+        id: 'barbare_melancolique',
         label: 'Le Mélancolique'
       },
       {
-        id: 'toutpuissant',
+        id: 'barbare_toutpuissant',
         label: 'Le Tout-Puissant'
       },
       {
-        id: 'geant',
+        id: 'barbare_geant',
         label: 'Le Géant'
       },
       {
-        id: 'triomphant',
+        id: 'barbare_triomphant',
         label: 'Le Triomphant'
       }
     ],
     looks: [
       [
         {
-          id: 'tourmente',
+          id: 'barbare_tourmente',
           label: 'Regard tourmenté'
         },
         {
-          id: 'hagards',
+          id: 'barbare_hagards',
           label: 'Yeux hagards'
         },
         {
-          id: 'feroce',
+          id: 'barbare_feroce',
           label: 'Regard féroce'
         },
         {
-          id: 'voiles',
+          id: 'barbare_voiles',
           label: 'Yeux voilés'
         }
       ],
       [
         {
-          id: 'biscotos',
+          id: 'barbare_biscotos',
           label: 'Gros biscotos'
         },
         {
-          id: 'longues',
+          id: 'barbare_longues',
           label: 'Longues jambes'
         },
         {
-          id: 'squelettique',
+          id: 'barbare_squelettique',
           label: 'Squelettique'
         },
         {
-          id: 'souple',
+          id: 'barbare_souple',
           label: 'Souple'
         }
       ],
       [
         {
-          id: 'tatouages',
+          id: 'barbare_tatouages',
           label: 'Tatouages étranges'
         },
         {
-          id: 'bijoux',
+          id: 'barbare_bijoux',
           label: 'Bijoux insolites'
         },
         {
-          id: 'parure',
+          id: 'barbare_parure',
           label: 'Pas la moindre parure'
         }
       ],
       [
         {
-          id: 'fripes',
+          id: 'barbare_fripes',
           label: 'Fripes'
         },
         {
-          id: 'soieries',
+          id: 'barbare_soieries',
           label: 'Soieries'
         },
         {
-          id: 'pillard',
+          id: 'barbare_pillard',
           label: 'Allure de pillard'
         },
         {
-          id: 'inadaptee',
+          id: 'barbare_inadaptee',
           label: 'Tenue inadaptée au climat'
         }
       ]
@@ -236,87 +236,85 @@ export const defaultClasses = [
     //TODO
     startingActions : [
       {
-        id: `etranger`,
+        id: `barbare_etranger`,
         title: `Etranger`,
         description: `Vous pouvez être elfe, nain, halfelin ou humain, mais vous et les vôtres n'êtres pas d'ici. Au début de chaque session, le MJ vous demandera quelque chose à propos de votre terre natale, pourquoi vous l'avez quittée ou ce que vous avez laissé derrière vous. Si vous répondez, marquez 1 PX.`
       },
       {
         choices : [
           {
-            id: 'acier',
+            id: 'barbare_acier',
             title: `Bardé d'acier`,
             description: `Ignorez le marqueur encombrant de l'armure que vous portez.`
           },
           {
-            id: 'poil',
+            id: 'barbare_poil',
             title: 'A poil et indemne',
             description: `Tant que vous transportez moins que votre poids maximum et que vous ne portez ni armure ni bouclier, gagnez +1 armure`
           },
         ]
       },
       {
-        id: `hercule`,
+        id: `barbare_hercule`,
         title: `Appétits herculéens`,
         description: `Les autres peuvent se contenter d'un vin ou d'un ou deux esclaves à leur service, mais il vous en faut plus !<br>Choisissez deux ambissions ci-dessous. Lorsque vous poursuivez une de vos ambitions, si vous deviez lancer deux d6 pour une action, lancez un d6 et un d8 à la place. Si le résultat du d6 est supérieur à celui du d8, le MJ peut introduire une complication ou un danger provoqué par votre avidité.`,
         //TODO
         choices: [
           {
-            id: `destruction`,
+            id: `barbare_destruction`,
             label: `Destruction pure`
           },
           {
-            id: `pouvoir`,
+            id: `barbare_pouvoir`,
             label: `Pouvoir sur autrui`
           },
           {
-            id: `plaisirs`,
+            id: `barbare_plaisirs`,
             label: `Plaisirs terrestres`
           },
           {
-            id: `conquete`,
+            id: `barbare_conquete`,
             label: `Conquête`
           },
           {
-            id: `richesse`,
+            id: `barbare_richesse`,
             label: `Richesses et possessions`
           },
           {
-            id: `gloire`,
+            id: `barbare_gloire`,
             label: `Gloire et renommée`
           }
         ]
       },
       {
-        id: `main`,
+        id: `barbare_main`,
         title: `Garder la main`,
         description: `Vous avez +1 continu sur votre dernier soupir. Lorsque vous rendez votre dernier soupir, sur un 7-9 faites une offre à la Mort en échange de votre vie. Si la Mort accepte, elle vous rend la vie, sinon vous trépassez.`
       },
       {
-        id: `costaud`,
+        id: `barbare_costaud`,
         title: `Costaud`,
         description: `Lorsque vous portez une arme, celle-ci gagne les marqueurs puissant et dévastateur`
       },
       {
-        id: `attend`,
+        id: `barbare_attend`,
         title: `Qu'est ce que t'attends ?`,
         description: `Quand vous hurlez un défi à vos ennemis, lancez 2d6+CON.<br>Sur 10+, ils vous considèrent comme la menace la plus importante à affronter et ignorent vos compagnons. Gagnez +2 dégâts continu contre eux.<br>Sur 7-9, seuls quelques-uns (les plus faibles ou les plus téméraires) succombent à vos provocations.`
       }
     ],
-    //TODO
     alignments: [
       {
-        id: `chaotique`,
+        id: `barbare_chaotique`,
         title: `Chaotique`,
         description: `Se soustraire à une coutume du monde civilisé.`
       },
       {
-        id: `neutre`,
+        id: `barbare_neutre`,
         title: `Neutre`,
         description: `Enseigner les coutumes de votre peuple à quelqu'un.`
       }
     ],
     maxWeight: 9,
-    //TODO
     equipments: [
       {
         label: `Des rations (5 utilisations, 1 poids)`
@@ -369,106 +367,106 @@ export const defaultClasses = [
     description: `Les poèmes disent que la vie d'aventurier est une route pavée de gloire, de fortune et de combats. Les histoires racontées dans toutes les tavernes de campagne doivent bien avoir un fond de vérité, n'est ce pas ? Les chansons qui inspirent les humbles comme les têtes couronnées, qui calment les bêtes sauvages ou rendent les hommes furieux doivent bien venir de quelque part. Voici le barde. Vous. La voix enjôleuse et la répartie facile.<br>Vous. Chanteur et conteur hors pair.<br>N’importe quel ménestrel peut réciter une fable, seul un vrai barde peut la vivre. Enfilez vos bottes, noble orateur. Aiguisez cette dague discrète et relevez le défi. Quelqu’un doit se trouver là, coude à coude avec les gros bras, les voyous et la graine de héros. Qui, mieux que vous, pour relater vos exploits ? Personne`,
     races: [
       {
-        id: `elfe`,
+        id: `barde_elfe`,
         label: `Elfe`,
         names : [
           {
-            id: `astrafel`,
+            id: `barde_astrafel`,
             label: `Astrafel`
           },
           {
-            id: `daelwyn`,
+            id: `barde_daelwyn`,
             label: `Daelwyn`
           },
           {
-            id: `feliana`,
+            id: `barde_feliana`,
             label: `Feliana`
           },
           {
-            id: `damarra`,
+            id: `barde_damarra`,
             label: `Damarra`
           },
           {
-            id: `sistranalle`,
+            id: `barde_sistranalle`,
             label: `Sistranalle`
           },
           {
-            id: `pendrell`,
+            id: `barde_pendrell`,
             label: `Pendrell`
           },
           {
-            id: `melliandre`,
+            id: `barde_melliandre`,
             label: `Melliandre`
           },
           {
-            id: `dagoliir`,
+            id: `barde_dagoliir`,
             label: `Dagoliir`
           }
         ],
         startingActions: [
           {
-            id: `elfe`,
+            id: `barde_elfe`,
             title: `Elfe`,
             description: `Lorsque vous arrivez à un endroit important (à vous de décider), vous pouvez demander au MJ de vous raconter un fait de l’histoire de ce lieu.`
           }
         ]
       },
       {
-        id: `humain`,
+        id: `barde_humain`,
         label: `Humain`,
         names : [
           {
-            id: `baldric`,
+            id: `barde_baldric`,
             label: `Baldric`
           },
           {
-            id: `leena`,
+            id: `barde_leena`,
             label: `Leena`
           },
           {
-            id: `dunwick`,
+            id: `barde_dunwick`,
             label: `Dunwick`
           },
           {
-            id: `willem`,
+            id: `barde_willem`,
             label: `Willem`
           },
           {
-            id: `edungeonworldyn`,
+            id: `barde_edungeonworldyn`,
             label: `EDungeon Worldyn`
           },
           {
-            id: `florian`,
+            id: `barde_florian`,
             label: `Florian`
           },
           {
-            id: `angélique`,
+            id: `barde_angélique`,
             label: `Angélique`
           },
           {
-            id: `quorra`,
+            id: `barde_quorra`,
             label: `Quorra`
           },
           {
-            id: `charlotte`,
+            id: `barde_charlotte`,
             label: `Charlotte`
           },
           {
-            id: `lili`,
+            id: `barde_lili`,
             label: `Lili`
           },
           {
-            id: `raymonde`,
+            id: `barde_raymonde`,
             label: `Raymonde`
           },
           {
-            id: `cassandra`,
+            id: `barde_cassandra`,
             label: `Cassandra`
           }
         ],
         startingActions: [
           {
-            id: `humain`,
+            id: `barde_humain`,
             title: `Humain`,
             description: `Quand vous arrivez pour la première fois dans un lieu civilisé, quelqu’un qui respecte les lois de l’hospitalité envers les ménestrels vous hébergera.`
           }
@@ -478,57 +476,57 @@ export const defaultClasses = [
     looks: [
       [
         {
-          id: 'oeilcomplice',
+          id: 'barde_oeilcomplice',
           label: 'Œil complice'
         },
         {
-          id: 'regardardent',
+          id: 'barde_regardardent',
           label: 'Regard ardent'
         },
         {
-          id: 'regardjoyeux',
+          id: 'barde_regardjoyeux',
           label: 'Regard joyeux'
         },
       ],
       [
         {
-          id: 'coiffuresophistiquee',
+          id: 'barde_coiffuresophistiquee',
           label: 'Coiffure sophistiquée'
         },
         {
-          id: 'echevele',
+          id: 'barde_echevele',
           label: 'Echevelé'
         },
         {
-          id: 'casquettealamode',
+          id: 'barde_casquettealamode',
           label: 'Casquette à la mode'
         },
       ],
       [
         {
-          id: 'parure',
+          id: 'barde_parure',
           label: 'Parure'
         },
         {
-          id: 'vetementsdevoyages',
+          id: 'barde_vetementsdevoyages',
           label: 'Vêtements de voyages'
         },
         {
-          id: 'fripes',
+          id: 'barde_fripes',
           label: 'Fripes'
         },
       ],
       [
         {
-          id: 'enforme',
+          id: 'barde_enforme',
           label: 'En forme'
         },
         {
-          id: 'biennourri',
+          id: 'barde_biennourri',
           label: 'Bien nourri'
         },
         {
-          id: 'mince',
+          id: 'barde_mince',
           label: 'Mince'
         },
       ]
@@ -537,69 +535,69 @@ export const defaultClasses = [
     damage: 6,
     startingActions: [
       {
-        id: `artsarcaniques`,
+        id: `barde_artsarcaniques`,
         title: `Arts arcaniques`,
         description: `Quand la magie de votre spectacle se matérialise, choisissez un allié et un effet :<ul><li>Soignez 1d8 dégâts.</li><li>Ajoutez 1d4 aux prochains dégâts qu’il inflige.</li><li>Son esprit est libéré d’un enchantement.</li><li>La prochaine fois qu’on l’aide, il reçoit +2 au lieu de +1.</li><ul>Puis, lancez 2d6+CHA. Sur 10+, l’allié bénéficie de l’effet choisi. Sur 7-9, votre magie fonctionne mais vous attirez une attention malvenue ou votre sort se propage à d’autres cibles (au choix du MJ) et les affecte également.`
       },
       {
-        id: `unhavredanslatempete`,
+        id: `barde_unhavredanslatempete`,
         title: `Un havre dans la tempête`,
         description: `Lorsque vous revenez dans un lieu civilisé que vous avez déjà visité, indiquez au MJ à quand remonte votre dernier passage. Il vous dira en quoi ce lieu a changé depuis.`
       },
       {
-        id: `legendesdesbardes`,
+        id: `barde_legendesdesbardes`,
         title: `Légendes des bardes`,
         description: `Choisissez un domaine de connaissance. Lorsque vous découvrez ou rencontrez pour la première fois un objet, un lieu ou une créature importants de votre domaine de connaissance, vous pouvez poser une question à son sujet au MJ. Le MJ répondra sincèrement. Il peut alors vous demander dans quel récit, quelle chanson ou légende, vous avez trouvé cette information.`,
         choices : [
           {
-            id: `sortsmagie`,
+            id: `barde_sortsmagie`,
             title: `Sorts & magie`
           },
           {
-            id: `mortsetmortsvivants`,
+            id: `barde_mortsetmortsvivants`,
             title: `Morts et morts-vivants`
           },
           {
-            id: `grandsevenementsdumondeconnu`,
+            id: `barde_grandsevenementsdumondeconnu`,
             title: `Grands évènements du monde connu`
           },
           {
-            id: `bestiairedescreaturesinhabituelles`,
+            id: `barde_bestiairedescreaturesinhabituelles`,
             title: `Bestiaire des créatures inhabituelles`
           },
           {
-            id: `spheresplanaires`,
+            id: `barde_spheresplanaires`,
             title: `Sphères planaires`
           },
           {
-            id: `legendesdesherosdupasse`,
+            id: `barde_legendesdesherosdupasse`,
             title: `Légendes des héros du passé`
           },
           {
-            id: `lesdieuxetleursserviteurs`,
+            id: `barde_lesdieuxetleursserviteurs`,
             title: `Les dieux et leurs serviteurs`
           }
         ]
       },
       {
-        id: `charmantetsincere`,
+        id: `barde_charmantetsincere`,
         title: `Charmant et sincère`,
         description: `Quand vous discutez franchement avec quelqu’un, vous pouvez poser une question de la liste ci-dessous à son joueur (MJ compris). Il doit répondre sincèrement et peut à son tour vous poser une question de la liste, à laquelle vous devez répondre sincèrement.<ul><li>Qui sers-tu ?</li><li>Que souhaiterais-tu que je fasse ?</li><li>Comment pourrais-je t’amener à (faire)_______ ?</li><li>Que ressens-tu vraiment en ce moment ?</li><li>Que désires-tu le plus ?</li></ul>`
       }
     ],
     alignments: [
       {
-        id: `bon`,
+        id: `barde_bon`,
         title: `Bon`,
         description: `Exercer son art pour aider autrui.`
       },
       {
-        id: `neutre`,
+        id: `barde_neutre`,
         title: `Neutre`,
         description: `Désamorcer une situation tendue ou éviter un conflit.`
       },
       {
-        id: `chaotique`,
+        id: `barde_chaotique`,
         title: `Chaotique`,
         description: `Pousser autrui à une action décisive et irréfléchie.`
       }
