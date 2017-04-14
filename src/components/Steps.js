@@ -7,6 +7,7 @@ import LooksContainer from '../containers/LooksContainer';
 import StatsContainer from '../containers/StatsContainer';
 import AlignmentsContainer from '../containers/AlignmentsContainer';
 import EquipmentsContainer from '../containers/EquipmentsContainer';
+import BondsContainer from '../containers/BondsContainer';
 
 class Steps extends Component {
   render(){
@@ -21,6 +22,7 @@ class Steps extends Component {
         <StatsContainer />
         <AlignmentsContainer />
         <EquipmentsContainer />
+        <BondsContainer />
       </div>
     )
   }

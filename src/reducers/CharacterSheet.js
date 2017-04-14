@@ -12,7 +12,8 @@ export const defaultCharacterSheet = {
   damage: Utils.getClasses()[0].damage,
   maxWeight: Utils.getClasses()[0].maxWeight,
   alignment: Utils.getClasses()[0].alignments[0],
-  equipments: Utils.getDefaultEquipments(Utils.getClasses()[0])
+  equipments: Utils.getDefaultEquipments(Utils.getClasses()[0]),
+  bonds: Utils.getDefaultBondsForClass(Utils.getClasses()[0])
 };
 
 export const characterSheetChange = (characterSheet, action) => {
@@ -30,7 +31,8 @@ export const characterSheetChange = (characterSheet, action) => {
         damage: currentClass.damage,
         maxWeight: currentClass.maxWeight,
         alignment: currentClass.alignments[0],
-        equipments: Utils.getDefaultEquipments(currentClass)
+        equipments: Utils.getDefaultEquipments(currentClass),
+        bonds: Utils.getDefaultBondsForClass(currentClass)
       });
     case 'CHANGE_NAME':
       return Object.assign({}, characterSheet, {
@@ -67,7 +69,7 @@ export const characterSheetChange = (characterSheet, action) => {
       });
     case 'CHANGE_ALIGNMENT':
       return Object.assign({}, characterSheet, {
-        alignment: Utils.getClassFromId(characterSheet.id).alignments.find(a => a.title === action.alignment) 
+        alignment: Utils.getClassFromId(characterSheet.id).alignments.find(a => a.title === action.alignment)
       });
     case 'CHANGE_STATS':
       const stats = Utils.updateStats(characterSheet.stats, action.stat, action.value);
@@ -106,6 +108,10 @@ export const characterSheetChange = (characterSheet, action) => {
     case 'SELECT_EQUIPMENT':
       return Object.assign({}, characterSheet, {
         equipments : getEquipments(action.equipment, characterSheet.equipments, characterSheet.id)
+      });
+    case 'SELECT_BOND':
+      return Object.assign({}, characterSheet, {
+        bonds : characterSheet.bonds
       });
     default:
       return characterSheet;

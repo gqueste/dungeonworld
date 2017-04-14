@@ -61,3 +61,10 @@ export const onEquipmentSelect = (equipment) => {
     equipment
   }
 }
+
+export const onBondSelect = (bond) => {
+  return {
+    type: 'SELECT_BOND',
+    bond
+  }
+}

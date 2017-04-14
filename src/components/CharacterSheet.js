@@ -69,6 +69,24 @@ class CharacterSheet extends Component {
         );
       }
     };
+    const bonds = () => {
+      const bondsList = this.props.characterSheet.bonds.map((bond) => {
+        if (bond.selected) {
+          return (
+            <li key={bond.label}>{bond.label}</li>
+          );
+        }
+      });
+
+      return (
+        <div>
+          <p>Liens</p>
+          <ul>
+            {bondsList}
+          </ul>
+        </div>
+      );
+    }
     return(
       <div>
         <p>{this.props.characterSheet.description}</p>
@@ -82,6 +100,7 @@ class CharacterSheet extends Component {
         <p>Max Weight: {this.props.characterSheet.maxWeight}</p>
         <p>Alignement: {this.props.characterSheet.alignment.title} - {this.props.characterSheet.alignment.description}</p>
         {equipments()}
+        {bonds()}
       </div>
     )
   }

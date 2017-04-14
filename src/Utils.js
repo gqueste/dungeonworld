@@ -83,6 +83,22 @@ class Utils {
     }
     return ret;
   }
+
+  static getDefaultBondsForClass(classe) {
+    return classe.bonds.map((bond, index) => {
+      bond.selected = index === 0;
+      return bond;
+    });
+  }
+
+  static selectBond(bonds, selectedBond) {
+    return bonds.map((bond) => {
+      if (bond.label === selectedBond.label) {
+        bond.selected = !bond.selected;
+      }
+      return bond;
+    })
+  }
 }
 
 export default Utils;

@@ -353,7 +353,7 @@ export const Barbare = {
       label: `Le comportement de ___ est bizarre et déroutant`
     },
     {
-      label: `___ se fourre toujours dasn les ennuis, je dois le protéger de lui-même`
+      label: `___ se fourre toujours dans les ennuis, je dois le protéger de lui-même`
     },
     {
       label: `___ partage ma faim de gloire; la terre tremblera sur notre passage !`
