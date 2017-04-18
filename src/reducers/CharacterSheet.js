@@ -13,7 +13,8 @@ export const defaultCharacterSheet = {
   maxWeight: Utils.getClasses()[0].maxWeight,
   alignment: Utils.getClasses()[0].alignments[0],
   equipments: Utils.getDefaultEquipments(Utils.getClasses()[0]),
-  bonds: Utils.getDefaultBondsForClass(Utils.getClasses()[0])
+  bonds: Utils.getDefaultBondsForClass(Utils.getClasses()[0]),
+  raceStartingAction: Utils.getStartingActionForClass(Utils.getClasses()[0])
 };
 
 export const characterSheetChange = (characterSheet, action) => {
@@ -32,7 +33,8 @@ export const characterSheetChange = (characterSheet, action) => {
         maxWeight: currentClass.maxWeight,
         alignment: currentClass.alignments[0],
         equipments: Utils.getDefaultEquipments(currentClass),
-        bonds: Utils.getDefaultBondsForClass(currentClass)
+        bonds: Utils.getDefaultBondsForClass(currentClass),
+        raceStartingAction: Utils.getStartingActionForClass(currentClass)
       });
     case 'CHANGE_NAME':
       return Object.assign({}, characterSheet, {
@@ -45,7 +47,8 @@ export const characterSheetChange = (characterSheet, action) => {
     case 'CHANGE_RACE':
       return Object.assign({}, characterSheet, {
         race: action.race,
-        name: Utils.getNamesForRace(characterSheet.id, action.race)[0].label
+        name: Utils.getNamesForRace(characterSheet.id, action.race)[0].label,
+        raceStartingAction: Utils.getStartingActionForRace(characterSheet.id, action.race)
       });
     case 'SELECT_LOOK':
       const looks = [];

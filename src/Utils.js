@@ -99,6 +99,23 @@ class Utils {
       return bond;
     })
   }
+
+  static getStartingActionForClass(classe) {
+    if (classe.races && classe.races[0].startingActions) {
+      return classe.races[0].startingActions[0];
+    } else {
+      return undefined;
+    }
+  }
+
+  static getStartingActionForRace(classId, raceLabel) {
+    const currentClass = Utils.getClassFromId(classId);
+    if(!currentClass.races) {
+      return undefined;
+    } else {
+      return currentClass.races.find(race => race.label === raceLabel).startingActions[0];
+    }
+  }
 }
 
 export default Utils;

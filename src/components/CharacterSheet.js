@@ -86,7 +86,28 @@ class CharacterSheet extends Component {
           </ul>
         </div>
       );
-    }
+    };
+
+    const actions = () => {
+      const raceStartingAction = () => {
+        if (this.props.characterSheet.raceStartingAction) {
+          return (
+            <li>
+              <strong>{this.props.characterSheet.raceStartingAction.title}</strong> : {this.props.characterSheet.raceStartingAction.description}
+            </li>
+          )
+        }
+      }
+
+      return (
+        <div>
+          <p>Actions</p>
+          <ul>
+            {raceStartingAction()}
+          </ul>
+        </div>
+      );
+    };
     return(
       <div>
         <p>{this.props.characterSheet.description}</p>
@@ -101,6 +122,7 @@ class CharacterSheet extends Component {
         <p>Alignement: {this.props.characterSheet.alignment.title} - {this.props.characterSheet.alignment.description}</p>
         {equipments()}
         {bonds()}
+        {actions()}
       </div>
     )
   }
