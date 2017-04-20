@@ -4,126 +4,126 @@ export const Immolateur = {
   description: `Tes compagnons te craignent à juste titre. Le guerrier peut bien passer à la torche un terrier de gobelins, le magicien en appeler aux élémentaires et le chaman aux esprits du feu mais ils ne t’arrivent pas à la cheville. Et pour cause : tu es le feu. Le feu qui embrasse les esprits et conduit à la révolte, le feu qui consume les cœurs de passion, le feu auquel tu sacrifies biens et victimes pour acquérir plus de puissance.<br>Tes compagnons te craignent, mais ils savent aussi qu’il vaut mieux t’avoir comme allié que comme ennemi.`,
   races: [
     {
-      id: `humain`,
+      id: `immolateur_humain`,
       label: `Humain`,
       names : [
         {
-          id: `salomon`,
+          id: `immolateur_salomon`,
           label: `Salomon`
         },
         {
-          id: `timothy`,
+          id: `immolateur_timothy`,
           label: `Timothy`
         },
         {
-          id: `kalil`,
+          id: `immolateur_kalil`,
           label: `Kalil`
         },
         {
-          id: `omen`,
+          id: `immolateur_omen`,
           label: `Omen`
         },
         {
-          id: `yohn`,
+          id: `immolateur_yohn`,
           label: `Yohn`
         },
         {
-          id: `hiko`,
+          id: `immolateur_hiko`,
           label: `Hiko`
         },
         {
-          id: `agasha`,
+          id: `immolateur_agasha`,
           label: `Agasha`
         },
         {
-          id: `elizabeth`,
+          id: `immolateur_elizabeth`,
           label: `Elizabeth`
         },
         {
-          id: `harald`,
+          id: `immolateur_harald`,
           label: `Harald`
         },
         {
-          id: `fatia`,
+          id: `immolateur_fatia`,
           label: `Fatia`
         },
         {
-          id: `khalwa`,
+          id: `immolateur_khalwa`,
           label: `Khalwa`
         },
         {
-          id: `adur`,
+          id: `immolateur_adur`,
           label: `Adur`
         },
         {
-          id: `ignis`,
+          id: `immolateur_ignis`,
           label: `Ignis`
         },
         {
-          id: `yajna`,
+          id: `immolateur_yajna`,
           label: `Yajna`
         },
         {
-          id: `umlilo`,
+          id: `immolateur_umlilo`,
           label: `Umlilo`
         }
       ],
       startingActions: [
         {
-          id: `humain`,
+          id: `immolateur_humain`,
           title: `Humain`,
           description: `Lorsque vous montez un camp à proximité d’un grand brasier, regagnez tous vos PV.`
         }
       ]
     },
     {
-      id: `salamandre`,
+      id: `immolateur_salamandre`,
       label: `Salamandre`,
       names : [
         {
-          id: `Soufrecœur`,
+          id: `immolateur_soufrecoeur`,
           label: `Soufrecœur`
         },
         {
-          id: `Marcheflammes`,
+          id: `immolateur_marcheflammes`,
           label: `Marcheflammes`
         },
         {
-          id: `Ambrefouet`,
+          id: `immolateur_ambrefouet`,
           label: `Ambrefouet`
         },
         {
-          id: `Griffecendrée`,
+          id: `immolateur_griffecendree`,
           label: `Griffecendrée`
         },
         {
-          id: `Cendredémon`,
+          id: `immolateur_cendredemon`,
           label: `Cendredémon`
         },
         {
-          id: `Suifamer`,
+          id: `immolateur_suifamer`,
           label: `Suifamer`
         },
         {
-          id: `Flambecolline`,
+          id: `immolateur_flambecolline`,
           label: `Flambecolline`
         },
         {
-          id: `Brûlécaille`,
+          id: `immolateur_brulecaille`,
           label: `Brûlécaille`
         },
         {
-          id: `Mèchechandelle`,
+          id: `immolateur_mechechandelle`,
           label: `Mèchechandelle`
         },
         {
-          id: `Crocharbon`,
+          id: `immolateur_crocharbon`,
           label: `Crocharbon`
         }
       ],
       startingActions: [
         {
-          id: `salamandre`,
+          id: `immolateur_salamandre`,
           title: `Salamandre`,
           description: `La chaleur et le feu non-magiques ne peuvent vous nuire.`
         }
@@ -133,57 +133,57 @@ export const Immolateur = {
   looks: [
     [
       {
-        id: 'regarddebraise',
+        id: 'immolateur_regarddebraise',
         label: 'Regard de braise'
       },
       {
-        id: 'yeuxchaleureux',
+        id: 'immolateur_yeuxchaleureux',
         label: 'Yeux chaleureux'
       },
       {
-        id: 'regardbrulant',
+        id: 'immolateur_regardbrulant',
         label: 'Regard brûlant'
       }
     ],
     [
       {
-        id: 'marquesetranges',
+        id: 'immolateur_marquesetranges',
         label: 'Marques étranges'
       },
       {
-        id: 'cicatricesrituelles',
+        id: 'immolateur_cicatricesrituelles',
         label: 'Cicatrices rituelles'
       },
       {
-        id: 'peauimmaculee',
+        id: 'immolateur_peauimmaculee',
         label: 'Peau immaculée'
       }
     ],
     [
       {
-        id: 'allureautoritaire',
+        id: 'immolateur_allureautoritaire',
         label: 'Allure autoritaire'
       },
       {
-        id: 'conduitefrenetique',
+        id: 'immolateur_conduitefrenetique',
         label: 'Conduite frénétique'
       },
       {
-        id: 'rageapeinevoilee',
+        id: 'immolateur_rageapeinevoilee',
         label: 'Rage à peine voilée'
       }
     ],
     [
       {
-        id: 'voixcrepitante',
+        id: 'immolateur_voixcrepitante',
         label: 'Voix crépitante'
       },
       {
-        id: 'voixmurmurante',
+        id: 'immolateur_voixmurmurante',
         label: 'Voix murmurante'
       },
       {
-        id: 'voixrugissante',
+        id: 'immolateur_voixrugissante',
         label: 'Voix rugissante'
       }
     ]
@@ -192,44 +192,44 @@ export const Immolateur = {
   damage: 8,
   startingActions : [
     {
-      id: `tissonardent`,
+      id: `immolateur_tissonardent`,
       title: `Tisson ardent`,
       description: `Lorsque vous invoquez une arme de feu, lancez 2d6+CON. Sur 10+ choisissez deux des marqueurs suivants. Sur 7-9 choisissez-en un. Vous pouvez remplacer votre FOR ou votre DEX par INT pour vos attaques avec cette arme. L’arme démarre toujours avec les marqueurs enflammé, toucher, dangereux et 3 utilisations. Chaque attaque avec cette arme dépense une utilisation.<ul><li>Contact</li><li>Lancé, Courte</li><li>+1 dégâts</li><li>Retirez le marqueur dangereux</li></ul>`
     },
     {
-      id: `combattrelefeuparlefeu`,
+      id: `immolateur_combattrelefeuparlefeu`,
       title: `Combattre le feu par le feu`,
       description: `Lorsque vous encaissez des dégâts (malgré l’armure) et que leur nombre est impair, votre feu intérieur vous vient en aide. Lancez 1d4 et utilisez le résultat pour augmenter le nombre d’utilisations de votre tison ardent s’il est actif, ou l’ajouter à votre prochain jet d’invocation de tison ardent ou encore réduire les dégâts de ce montant.`
     },
     {
-      id: `lamarquedezuko`,
+      id: `immolateur_lamarquedezuko`,
       title: `La marque de Zuko`,
       description: `Lorsque vous pliez une flamme à votre volonté, lancez 2d6+SAG. Sur 10+ elle agit selon vos ordres et adopte la forme et le mouvement que vous souhaitez tant qu’elle a assez de combustible à brûler. Sur 7-9 l’effet ne dure qu’un moment.`
     },
     {
-      id: `allumeeeeerlefeu`,
+      id: `immolateur_allumeeeeerlefeu`,
       title: `Allumeeeeer le feu !`,
       description: `Quand vous fixez intensément le regard d’une personne, vous pouvez demander à son joueur (MJ compris) ce qui attise les flammes de son désir. Il vous répondra sincèrement, même si le personnage ne le sait pas ou le garde pour lui habituellement.`
     },
     {
-      id: `faitmain`,
+      id: `immolateur_faitmain`,
       title: `Fait main`,
       description: `Vous pouvez utiliser vos mains à la place des outils et du feu pour créer des objets métalliques. Les matériaux bruts peuvent être changés en armes, armures, bijoux métalliques... Vous pouvez défaire ces objets, mais il faudra défier le danger si vous souhaitez que ce soit instantané ou sûr.`
     }
   ],
   alignments: [
     {
-      id: `mauvais`,
+      id: `immolateur_mauvais`,
       title: `Mauvais`,
       description: `Sacrifier une victime non consentante aux flammes.`
     },
     {
-      id: `chaotique`,
+      id: `immolateur_chaotique`,
       title: `Chaotique`,
       description: `Répandre une nouvelle idée dangereuse`
     },
     {
-      id: `neutre`,
+      id: `immolateur_neutre`,
       title: `Neutre`,
       description: `Sacrifiez volontairement quelque chose en échange d’un service rendu.`
     }

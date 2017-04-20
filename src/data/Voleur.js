@@ -4,98 +4,98 @@ export const Voleur = {
   description: `Tu les écoutes autour du feu de camp, se vantant de je ne sais quel combat ou de la bonne fortune qui veille sur votre groupe. Toi, tu comptes ton or et tu souris dans ton coin - ça, c’est le pied !<br>Tu es le seul à connaître le secret de Dungeon World : le pognon, le fric, l’oseille !<br>C’est sûr, ils t’ont fait la gueule à chaque fois que tu t’es tiré en douce, mais sans toi, lequel n’aurait pas été découpé par une lame volante ou empoisonné à mort par un vieux piège à aiguilles ? Alors, laisse-les brailler. Quand t’en auras fini avec tout ça, tu pourras trinquer à la gloire de ces héros morts. Dans ton château et blindé de thune. Crapule !`,
   races: [
     {
-      id: `halfelin`,
+      id: `voleur_halfelin`,
       label: `Halfelin`,
       names : [
         {
-          id: `felix`,
+          id: `voleur_felix`,
           label: `Félix`
         },
         {
-          id: `lapie`,
+          id: `voleur_lapie`,
           label: `La Pie`
         },
         {
-          id: `souris`,
+          id: `voleur_souris`,
           label: `Souris`
         },
         {
-          id: `sketch`,
+          id: `voleur_sketch`,
           label: `Sketch`
         },
         {
-          id: `trixie`,
+          id: `voleur_trixie`,
           label: `Trixie`
         },
         {
-          id: `robin`,
+          id: `voleur_robin`,
           label: `Robin`
         },
         {
-          id: `omar`,
+          id: `voleur_omar`,
           label: `Omar`
         },
         {
-          id: `brynn`,
+          id: `voleur_brynn`,
           label: `Brynn`
         },
         {
-          id: `cafard`,
+          id: `voleur_cafard`,
           label: `Cafard`
         }
       ],
       startingActions: [
         {
-          id: `halfelin`,
+          id: `voleur_halfelin`,
           title: `Halfelin`,
           description: `Quand vous attaquez avec une arme à distance, vous infligez +2 dégâts.`
         }
       ]
     },
     {
-      id: `humain`,
+      id: `voleur_humain`,
       label: `Humain`,
       names : [
         {
-          id: `Piaf`,
+          id: `voleur_piaf`,
           label: `Piaf`
         },
         {
-          id: `Pilon`,
+          id: `voleur_pilon`,
           label: `Pilon`
         },
         {
-          id: `Jack`,
+          id: `voleur_jack`,
           label: `Jack`
         },
         {
-          id: `Marlow`,
+          id: `voleur_marlow`,
           label: `Marlow`
         },
         {
-          id: `L’Esquive`,
+          id: `voleur_lesquive`,
           label: `L’Esquive`
         },
         {
-          id: `Rat`,
+          id: `voleur_rat`,
           label: `Rat`
         },
         {
-          id: `Vérole`,
+          id: `voleur_verole`,
           label: `Vérole`
         },
         {
-          id: `Humble`,
+          id: `voleur_humble`,
           label: `Humble`
         },
         {
-          id: `Farley`,
+          id: `voleur_farley`,
           label: `Farley`
         }
       ],
       startingActions: [
         {
-          id: `humain`,
+          id: `voleur_humain`,
           title: `Humain`,
           description: `Vous êtes un professionnel. Vous avez +1 quand vous étalez votre science ou que vous discernez la réalité à propos d’activités criminelles`
         }
@@ -105,53 +105,53 @@ export const Voleur = {
   looks: [
     [
       {
-        id: 'regardmobile',
+        id: 'voleur_regardmobile',
         label: 'Regard mobile'
       },
       {
-        id: 'regardassassin',
+        id: 'voleur_regardassassin',
         label: 'Regard assassin'
       }
     ],
     [
       {
-        id: 'encapuchonne',
+        id: 'voleur_encapuchonne',
         label: 'Encapuchonné'
       },
       {
-        id: 'cheveuxpetard',
+        id: 'voleur_cheveuxpetard',
         label: 'Cheveux en pétard'
       },
       {
-        id: 'cheveuxbrosse',
+        id: 'voleur_cheveuxbrosse',
         label: 'Cheveux en brosse'
       }
     ],
     [
       {
-        id: 'habitssombres',
+        id: 'voleur_habitssombres',
         label: 'Habits sombres'
       },
       {
-        id: 'vetementschics',
+        id: 'voleur_vetementschics',
         label: `Vêtements chics`
       },
       {
-        id: 'vetementsordinaires',
+        id: 'voleur_vetementsordinaires',
         label: `Vêtements ordinaires`
       }
     ],
     [
       {
-        id: 'corpssvelte',
+        id: 'voleur_corpssvelte',
         label: 'Corps svelte'
       },
       {
-        id: 'corpsnoueux',
+        id: 'voleur_corpsnoueux',
         label: `Corps noueux`
       },
       {
-        id: 'mou',
+        id: 'voleur_mou',
         label: `mou`
       }
     ]
@@ -160,47 +160,47 @@ export const Voleur = {
   damage: 8,
   startingActions : [
     {
-      id: `expertisedespieges`,
+      id: `voleur_expertisedespieges`,
       title: `Expertise des pièges`,
       description: `Quand vous prenez le temps d’étudier une zone dangereuse, lancez 2d6+DEX. Sur 10+ prenez 3, sur 7-9 prenez 1. Dépensez 1 pour poser une des questions suivantes pendant que vous vous déplacez dans cette zone :<ul><li>Y a-t-il un piège ici et si oui, comment se déclenche-t-il ?</li><li>Que fait ce piège quand il se déclenche ?</li><li>Qu’y a-t-il d’autre caché ici ?</li></ul>`
     },
     {
-      id: `ficellesdumetier`,
+      id: `voleur_ficellesdumetier`,
       title: `Ficelles du métier`,
       description: `Quand vous crochetez une serrure, faites les poches de quelqu’un ou désactivez un piège, lancez 2d6+DEX. Sur 10+ vous y parvenez sans problème. Sur 7-9, vous y parvenez mais le MJ vous laisse choisir deux options parmi suspicion, danger ou coût.`
     },
     {
-      id: `attaquesournoise`,
+      id: `voleur_attaquesournoise`,
       title: `Attaque sournoise`,
       description: `Quand vous attaquez un ennemi sans défense ou par surprise avec une arme de mêlée, vous pouvez choisir d’infliger vos dégâts ou de lancer lancez 2d6+DEX. Sur 10+ choisissez 2 options. Sur 7-9 choisissez-en 1 :<ul><li>Vous évitez le corps à corps avec votre adversaire.</li><li>Vous infligez vos dégâts +1d6.</li><li>Vous obtenez un avantage de +1 à suivre pour un allié ou vous-même si vous en profitez.</li><li>Vous réduisez son armure de 1 jusqu’à ce qu’il la répare.</li></ul>`
     },
     {
-      id: `moralesouple`,
+      id: `voleur_moralesouple`,
       title: `Morale souple`,
       description: `Quand quelqu’un essaie de déterminer votre alignement, vous pouvez répondre par l’alignement qui vous chante.`
     },
     {
-      id: `empoisonneur`,
+      id: `voleur_empoisonneur`,
       title: `Empoisonneur`,
       description: `Vous maîtrisez l’usage d’un poison. Choisissez un poison dans la liste suivante : ce poison n’est désormais plus dangereux pour vous. Vous commencez le jeu avec 3 doses de ce poison. Si vous avez le temps et les composants, vous pouvez distiller librement 3 nouvelles doses de ce poison. Notez que certains poisons sont appliqués, ce qui requiert de les administrer précautionneusement à la cible ou dans une nourriture ou boisson qu’elle absorbera. D’autres poisons nécessiteront simplement de toucher la victime, ce qui peut notamment se faire en enduisant une lame.`,
       choices: [
         {
-          id: `tagit`,
+          id: `voleur_tagit`,
           title: `Huile de Tagit (appliquer)`,
           description: `la cible s’endort d’un sommeil léger.`
         },
         {
-          id: `sanglante`,
+          id: `voleur_sanglante`,
           title: `Herbe sanglante (toucher)`,
           description: `la cible, tant qu’elle n’est pas soignée, soustrait 1d4 des dégâts qu’elle inflige.`
         },
         {
-          id: `racine`,
+          id: `voleur_racine`,
           title: `Racine d’or (appliquer)`,
           description: `la cible considère la prochaine créature qu’elle voit comme un allié fiable, jusqu’à preuve du contraire`
         },
         {
-          id: `larmes`,
+          id: `voleur_larmes`,
           title: `Larmes de serpent (toucher)`,
           description: `quiconque inflige des dégâts à la cible tire deux dés au lieu d’un et prend le meilleur résultat.`
         }
@@ -209,17 +209,17 @@ export const Voleur = {
   ],
   alignments: [
     {
-      id: `chaotique`,
+      id: `voleur_chaotique`,
       title: `Chaotique`,
       description: `Se jeter dans la gueule du loup sans réfléchir.`
     },
     {
-      id: `neutre`,
+      id: `voleur_neutre`,
       title: `Neutre`,
       description: `Eviter d’être découvert ou infiltrer un endroit.`
     },
     {
-      id: `mauvais`,
+      id: `voleur_mauvais`,
       title: `Mauvais`,
       description: `Faire porter le chapeau ou la poisse à un autre.`
     }

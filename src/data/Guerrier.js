@@ -4,192 +4,192 @@ export const Guerrier = {
   description: `C’est un boulot ingrat de se jeter, bille en tête, au cœur du danger et de ne devoir sa vie qu’à son armure et à son habileté. Ils ne chanteront pas vos louanges pour ce coup de couteau dans les côtes, pris à leur place dans cette taverne de Fricbourg. Pas de chœurs angéliques, non plus, pour les avoir tirés, encore hurlants, des Puits de la Folie.<br>Qu’importe ! Vous faites ça pour le courage et la gloire. Pour la clameur et la fureur des batailles.<br>Vous êtes une bête de fer. Tout en vous est acier. Tandis qu’autour du feu de camp, vos compagnons de route se plaignent de leurs blessures, vous arborez vos cicatrices avec fierté.<br>Vous êtes le mur contre lequel le danger vient s’anéantir.<br>Au final, vous serez le dernier debout.`,
   races: [
     {
-      id: `nain`,
+      id: `guerrier_nain`,
       label: `Nain`,
       names : [
         {
-          id: `ozruk`,
+          id: `guerrier_ozruk`,
           label: `Ozruk`
         },
         {
-          id: `surtur`,
+          id: `guerrier_surtur`,
           label: `Surtur`
         },
         {
-          id: `brunhilda`,
+          id: `guerrier_brunhilda`,
           label: `Brunhilda`
         },
         {
-          id: `annika`,
+          id: `guerrier_annika`,
           label: `Annika`
         },
         {
-          id: `janos`,
+          id: `guerrier_janos`,
           label: `Janos`
         },
         {
-          id: `greta`,
+          id: `guerrier_greta`,
           label: `Greta`
         },
         {
-          id: `dim`,
+          id: `guerrier_dim`,
           label: `Dim`
         },
         {
-          id: `rundrig`,
+          id: `guerrier_rundrig`,
           label: `Rundrig`
         },
         {
-          id: `jarl`,
+          id: `guerrier_jarl`,
           label: `Jarl`
         },
         {
-          id: `xotoq`,
+          id: `guerrier_xotoq`,
           label: `Xotoq`
         }
       ],
       startingActions: [
         {
-          id: `nain`,
+          id: `guerrier_nain`,
           title: `Nain`,
           description: `Quand vous trinquez avec quelqu’un, vous négociez avec CON au lieu de CHA.`
         }
       ]
     },
     {
-      id: `elfe`,
+      id: `guerrier_elfe`,
       label: `Elfe`,
       names : [
         {
-          id: `elohiir`,
+          id: `guerrier_elohiir`,
           label: `Elohiir`
         },
         {
-          id: `saraseth`,
+          id: `guerrier_saraseth`,
           label: `Saraseth`
         },
         {
-          id: `hasrith`,
+          id: `guerrier_hasrith`,
           label: `Hasrith`
         },
         {
-          id: `shevaral`,
+          id: `guerrier_shevaral`,
           label: `Shevaral`
         },
         {
-          id: `cadeus`,
+          id: `guerrier_cadeus`,
           label: `Cadeus`
         },
         {
-          id: `eldar`,
+          id: `guerrier_eldar`,
           label: `Eldar`
         },
         {
-          id: `kithracet`,
+          id: `guerrier_kithracet`,
           label: `Kithracet`
         },
         {
-          id: `thelian`,
+          id: `guerrier_thelian`,
           label: `Thelian`
         }
       ],
       startingActions: [
         {
-          id: `elfe`,
+          id: `guerrier_elfe`,
           title: `Elfe`,
           description: `Choisissez une arme. Traitez toutes les armes de ce type comme si elles avaient le marqueur précis.`
         }
       ]
     },
     {
-      id: `halfelin`,
+      id: `guerrier_halfelin`,
       label: `Halfelin`,
       names : [
         {
-          id: `Finnegan`,
+          id: `guerrier_finnegan`,
           label: `Finnegan`
         },
         {
-          id: `Olive`,
+          id: `guerrier_olive`,
           label: `Olive`
         },
         {
-          id: `Randolph`,
+          id: `guerrier_randolph`,
           label: `Randolph`
         },
         {
-          id: `Bartelby`,
+          id: `guerrier_bartelby`,
           label: `Bartelby`
         },
         {
-          id: `Aubrey`,
+          id: `guerrier_aubrey`,
           label: `Aubrey`
         },
         {
-          id: `BalDungeon`,
+          id: `guerrier_balDungeon`,
           label: `BalDungeon`
         },
         {
-          id: `Worldin`,
+          id: `guerrier_worldin`,
           label: `Worldin`
         },
         {
-          id: `Becca`,
+          id: `guerrier_becca`,
           label: `Becca`
         }
       ],
       startingActions: [
         {
-          id: `halfelin`,
+          id: `guerrier_halfelin`,
           title: `Halfelin`,
           description: `Quand vous défiez le danger en profitant de votre petite taille, vous recevez +1 à votre jet.`
         }
       ]
     },
     {
-      id: `humain`,
+      id: `guerrier_humain`,
       label: `Humain`,
       names : [
         {
-          id: `hawke`,
+          id: `guerrier_hawke`,
           label: `Hawke`
         },
         {
-          id: `rudiger`,
+          id: `guerrier_rudiger`,
           label: `Rudiger`
         },
         {
-          id: `gregor`,
+          id: `guerrier_gregor`,
           label: `Gregor`
         },
         {
-          id: `brianne`,
+          id: `guerrier_brianne`,
           label: `Brianne`
         },
         {
-          id: `walton`,
+          id: `guerrier_walton`,
           label: `Walton`
         },
         {
-          id: `castor`,
+          id: `guerrier_castor`,
           label: `Castor`
         },
         {
-          id: `shanna`,
+          id: `guerrier_shanna`,
           label: `Shanna`
         },
         {
-          id: `ajax`,
+          id: `guerrier_ajax`,
           label: `Ajax`
         },
         {
-          id: `hob`,
+          id: `guerrier_hob`,
           label: `Hob`
         }
       ],
       startingActions: [
         {
-          id: `humain`,
+          id: `guerrier_humain`,
           title: `Humain`,
           description: `Une fois par combat vous pouvez relancer un jet de dégâts, le vôtre ou celui de quelqu’un d’autre.`
         }
@@ -199,57 +199,57 @@ export const Guerrier = {
   looks: [
     [
       {
-        id: 'regarddur',
+        id: 'guerrier_regarddur',
         label: 'Regard dur'
       },
       {
-        id: 'regardmort',
+        id: 'guerrier_regardmort',
         label: 'Regard mort'
       },
       {
-        id: 'yeuximpatients',
+        id: 'guerrier_yeuximpatients',
         label: 'Yeux impatients'
       }
     ],
     [
       {
-        id: 'echevele',
+        id: 'guerrier_echevele',
         label: 'Echevelé'
       },
       {
-        id: 'tondu',
+        id: 'guerrier_tondu',
         label: 'Tondu'
       },
       {
-        id: 'casquecabosse',
+        id: 'guerrier_casquecabosse',
         label: 'Casque cabossé'
       }
     ],
     [
       {
-        id: 'peaucalleuse',
+        id: 'guerrier_peaucalleuse',
         label: 'Peau calleuse'
       },
       {
-        id: 'peaubronzee',
+        id: 'guerrier_peaubronzee',
         label: 'Peau bronzée'
       },
       {
-        id: 'cicatrices',
+        id: 'guerrier_cicatrices',
         label: 'Cicatrices'
       }
     ],
     [
       {
-        id: 'costaud',
+        id: 'guerrier_costaud',
         label: 'Costaud'
       },
       {
-        id: 'corpssouple',
+        id: 'guerrier_corpssouple',
         label: 'Corps souple'
       },
       {
-        id: 'corpsravage',
+        id: 'guerrier_corpsravage',
         label: 'Corps ravagé'
       }
     ]
@@ -258,34 +258,34 @@ export const Guerrier = {
   damage: 10,
   startingActions : [
     {
-      id: `forcerportesetherses`,
+      id: `guerrier_forcerportesetherses`,
       title: `Forcer portes et herses`,
       description: `Quand vous utilisez la force brute pour détruire un obstacle inanimé, lancez 2d6+FOR. Sur 10+ choisissez 3, sur 7-9, choisissez 2.<ul><li>Ça ne prend pas longtemps.</li><li>Rien de valeur n’est endommagé.</li><li>Cela ne fait pas un bruit énorme.</li><li>Vous pouvez réparer ça sans trop d’effort.</li></ul>`
     },
     {
-      id: `cuirasse`,
+      id: `guerrier_cuirasse`,
       title: `Cuirassé`,
       description: `Ignorez l’encombrement des armures que vous portez.`
     },
     {
-      id: `armefetiche`,
+      id: `guerrier_armefetiche`,
       title: `Arme fétiche`,
       description: `C’est votre arme. Beaucoup lui ressemblent, mais celle-là, c’est la vôtre. Votre arme est votre meilleure amie. Votre vie en dépend. Vous en êtes maître au même titre que votre vie. Sans vous, elle est inutile et réciproquement. Vous devez la brandir pour de bon Choisissez une arme - elles pèsent toutes 2 poids : Épée Hache Marteau Fléau Épieu Poings Choisissez une portée qui corresponde le mieux : Contact Proche Allonge Choisissez deux améliorations : Crochets et pointes. +1 dégâts, mais +1 poids. Acérée. +2 perforant. Parfaitement équilibrée. Ajouter précis. Dentelée. +1 dégâts. Brille en présence d’un type de créature de votre choix. Énorme. Ajouter dévastateur et puissant. Tous usages. Choisissez une portée supplémentaire. Excellente facture. -1 Poids Choisissez une apparence : Ancienne Immaculée Ouvragée Sinistre Tachée de sang Votre arme fétiche est spéciale. Ce n’est pas un objet ordinaire. A moins que vous n’entrepreniez quelque chose qui lui fasse courir un risque, elle ne vous quittera jamais de façon permanente même si parfois il vous faudra vous décarcasser pour la retrouver.`
     }
   ],
   alignments: [
     {
-      id: `bon`,
+      id: `guerrier_bon`,
       title: `Bon`,
       description: `Défendre les plus faibles que soi.`
     },
     {
-      id: `neutre`,
+      id: `guerrier_neutre`,
       title: `Neutre`,
       description: `Vaincre un adversaire de valeur.`
     },
     {
-      id: `chaotique`,
+      id: `guerrier_chaotique`,
       title: `Chaotique`,
       description: `Tuer un adversaire sans défense.`
     }
