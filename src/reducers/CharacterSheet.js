@@ -134,12 +134,11 @@ function getEquipments(selected, equipments, classId) {
   const index = arrayRow[0];
   const selectedId = arrayRow[1];
   const currentClass = Utils.getClassFromId(classId);
-  for(let i = 0; i < currentClass.equipments.length; i++) {
-    const equipment = currentClass.equipments[i];
+  for(let equipment of currentClass.equipments) {
     if(equipment.label) {
       ret.push(equipment);
     } else if(equipment.choices) {
-      const currentSelected = equipment.choices.find(c => selectedId === c.id && i == index);
+      const currentSelected = equipment.choices.find(c => selectedId === c.id);
       if(currentSelected) {
         ret.push(currentSelected);
       } else { // si pas sélectionné, mais dans equipments, on ajoute
