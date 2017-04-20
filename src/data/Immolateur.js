@@ -237,26 +237,33 @@ export const Immolateur = {
   maxWeight: 9,
   equipments: [
     {
+      id: 'immolateur_arme',
       label: `Vous ne portez pas d’arme et n’avez pas besoin d’armure, si ce n’est votre flamme intérieure.`
     },
     {
+      id: 'immolateur_symbole',
       label: `Un symbole de vos sacrifices passés`
     },
     {
+      id: 'immolateur_sac',
       label: `Un sac d’aventurier (5 utilisations, 1 poids)`
     },
     {
+      id: 'immolateur_potion',
       label: `Une potion de soins (0 poids)`
     },
     {
       choices: [
         {
+          id: 'immolateur_rations',
           label: `Rations (5 utilisations, 1 poids)`
         },
         {
+          id: 'immolateur_soins',
           label: `Potion de soins (0 poids)`
         },
         {
+          id: 'immolateur_po',
           label: `10 Po`
         }
       ]

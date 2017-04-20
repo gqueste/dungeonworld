@@ -54,7 +54,7 @@ class CharacterSheet extends Component {
     const equipments = () => {
       const equipmentsList = this.props.characterSheet.equipments.map((equipment, index) => {
         return (
-          <li key={`equipment${index}`}>{equipment}</li>
+          <li key={`equipment${index}`}>{equipment.label}</li>
         )
       });
 

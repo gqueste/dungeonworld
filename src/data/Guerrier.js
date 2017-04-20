@@ -293,17 +293,21 @@ export const Guerrier = {
   maxWeight: 12,
   equipments: [
     {
+      id: 'guerrier_fetiche',
       label: `Votre arme fétiche`
     },
     {
+      id: 'guerrier_rations',
       label: `Des rations (5 utilisations, 1 poids).`
     },
     {
       choices: [
         {
+          id: 'guerrier_cotte',
           label: `Cotte de mailles (1 armure, 1 poids) ainsi qu’un sac d’aventurier (1 poids)`
         },
         {
+          id: 'guerrier_armure',
           label: `Armure d’écailles (2 armure, 3 poids)`
         }
       ]
@@ -311,15 +315,19 @@ export const Guerrier = {
     {
       choices: [
         {
+          id: 'guerrier_bouclier1',
           label: `Bouclier (+1 armure, 2 poids)`
         },
         {
+          id: 'guerrier_potions1',
           label: `2 potions de soins (0 poids)`
         },
         {
+          id: 'guerrier_antidote1',
           label: `Antidote, rations (1 poids), herbes et cataplasmes (1 poids)`
         },
         {
+          id: 'guerrier_po1',
           label: `22 Po`
         }
       ]
@@ -327,15 +335,19 @@ export const Guerrier = {
     {
       choices: [
         {
+          id: 'guerrier_bouclier2',
           label: `Bouclier (+1 armure, 2 poids)`
         },
         {
+          id: 'guerrier_potions2',
           label: `2 potions de soins (0 poids)`
         },
         {
+          id: 'guerrier_antidote2',
           label: `Antidote, rations (1 poids), herbes et cataplasmes (1 poids)`
         },
         {
+          id: 'guerrier_po2',
           label: `22 Po`
         }
       ]

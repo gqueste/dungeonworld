@@ -7,21 +7,21 @@ class Equipments extends Component {
       return null;
     }
 
-    const equipmentList = this.props.equipments.map((equipment, index) => {
+    const equipmentList = this.props.equipments.map((equipment, equipmentIndex) => {
       if(equipment.label) {
         return (
-            <p key={`equipment${index}`}>{equipment.label}</p>
+            <p key={`equipment${equipmentIndex}`}>{equipment.label}</p>
         )
       }
 
       const choicesList = equipment.choices.map((choice, index) => {
         return (
-          <option key={choice.label}>{choice.label}</option>
+          <option key={choice.id} value={equipmentIndex + ',' + choice.id}>{choice.label}</option>
         )
       });
 
       return (
-        <select key={`select${index}`} className='form-control' onChange={e => this.props.onSelect(e.target.value)}>
+        <select key={`select${equipmentIndex}`} className='form-control' onChange={e => this.props.onSelect(e.target.value)}>
           {choicesList}
         </select>
       )

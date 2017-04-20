@@ -242,26 +242,33 @@ export const Barde = {
   maxWeight: 9,
   equipments: [
     {
+      id: 'barde_rations',
       label: `Des rations (5 utilisations, 1 poids)`
     },
     {
       choices: [
         {
+          id: 'barde_mandoline',
           label: `Mandoline de votre père, réparée`
         },
         {
+          id: 'barde_luth',
           label: `Splendide luth, cadeau d’une noble personne`
         },
         {
+          id: 'barde_flute',
           label: `Flûte de votre première sérénade`
         },
         {
+          id: 'barde_cor',
           label: `Cor, volé`
         },
         {
+          id: 'barde_violon',
           label: `Violon, jamais servi`
         },
         {
+          id: 'barde_chants',
           label: `Livret de chants écrit dans une langue oubliée`
         }
       ]
@@ -269,9 +276,11 @@ export const Barde = {
     {
       choices: [
         {
+          id: 'barde_armure',
           label: `Armure de cuir (1 armure, 1 poids)`
         },
         {
+          id: 'barde_habits',
           label: `Habits tape-à-l’œil (0 poids)`
         }
       ]
@@ -279,9 +288,11 @@ export const Barde = {
     {
       choices: [
         {
+          id: 'barde_rapiere',
           label: `Rapière de duelliste (proche, précis, 2 poids)`
         },
         {
+          id: 'barde_epee',
           label: `Epée courte (proche, 1 poids), arc rudimentaire (courte, 2 poids), flèches (3 munitions, 1 poids)`
         }
       ]
@@ -289,15 +300,19 @@ export const Barde = {
     {
       choices: [
         {
+          id: 'barde_sac',
           label: `Sac d’aventurier (1 poids)`
         },
         {
+          id: 'barde_bandages',
           label: `Bandages (0 poids)`
         },
         {
+          id: 'barde_herbe',
           label: `Herbe de Halfelin (0 poids)`
         },
         {
+          id: 'barde_po',
           label: `3 Po`
         }
       ]

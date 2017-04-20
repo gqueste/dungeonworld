@@ -197,17 +197,21 @@ export const Magicien = {
   maxWeight: 9,
   equipments: [
     {
+      id: 'magicien_grimoire',
       label: `Votre grimoire de sorts (1 poids)`
     },
     {
+      id: 'magicien_rations',
       label: `Des rations (5 utilisations, 1 poids).`
     },
     {
       choices: [
         {
+          id: 'magicien_armure',
           label: `Armure de cuir (1 armure, 1 poids)`
         },
         {
+          id: 'magicien_sac',
           label: `Sac de bouquins (5 utilisations, 2 poids) et 3 potions de soins`
         }
       ]
@@ -215,9 +219,11 @@ export const Magicien = {
     {
       choices: [
         {
+          id: 'magicien_dague',
           label: `Dague (contact, 1 poids)`
         },
         {
+          id: 'magicien_baton',
           label: `Bâton (proche, 2 mains, 1 poids)`
         }
       ]
@@ -225,9 +231,11 @@ export const Magicien = {
     {
       choices: [
         {
+          id: 'magicien_antidotes',
           label: `3 antidotes (0 poids)`
         },
         {
+          id: 'magicien_soins',
           label: `Potion de soins (0 poids)`
         }
       ]

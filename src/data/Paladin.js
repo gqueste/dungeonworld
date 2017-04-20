@@ -140,20 +140,25 @@ export const Paladin = {
   maxWeight: 12,
   equipments: [
     {
+      id: 'paladin_armure',
       label: `Armure d’écailles (2 armure, 3 poids)`
     },
     {
+      id: 'paladin_rations',
       label: `Des rations (5 utilisations, 1 poids)`
     },
     {
+      id: 'paladin_signe',
       label: `Un signe de votre foi que vous décrirez (0 poids)`
     },
     {
       choices: [
         {
+          id: 'paladin_hallebarde',
           label: `Hallebarde (allonge, +1 dégâts, 2 mains, 2 poids)`
         },
         {
+          id: 'paladin_epee',
           label: `Epée longue (proche, +1 dégâts, 1 poids) et bouclier (+1 armure, 2 poids)`
         }
       ]
@@ -161,9 +166,11 @@ export const Paladin = {
     {
       choices: [
         {
+          id: 'paladin_sac',
           label: `Sac d’aventurier (1 poids)`
         },
         {
+          id: 'paladin_rations',
           label: `Rations (1 poids), potion de soins (0 poids)`
         }
       ]

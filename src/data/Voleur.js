@@ -227,23 +227,29 @@ export const Voleur = {
   maxWeight: 9,
   equipments: [
     {
+      id: 'voleur_armure',
       label: `Armure de cuir (1 armure, 1 poids)`
     },
     {
+      id: 'voleur_rations',
       label: `Des rations (5 utilisations, 1 poids)`
     },
     {
+      id: 'voleur_poison',
       label: `3 doses du poison choisi`
     },
     {
+      id: 'voleur_po',
       label: `10 Po`
     },
     {
       choices: [
         {
+          id: 'voleur_dague',
           label: `Dague (contact, 1 poids), épée courte (proche, 1 poids)`
         },
         {
+          id: 'voleur_rapiere',
           label: `Rapière (proche, précis, 1 poids)`
         }
       ]
@@ -251,9 +257,11 @@ export const Voleur = {
     {
       choices: [
         {
+          id: 'voleur_lancer',
           label: `3 dagues de lancer (lancer, courte, 0 poids)`
         },
         {
+          id: 'voleur_arc',
           label: `Arc rudimentaire (courte, 2 poids), flèches (3 munitions, 1 poids)`
         }
       ]
@@ -261,9 +269,11 @@ export const Voleur = {
     {
       choices: [
         {
+          id: 'voleur_sac',
           label: `Sac d’aventurier (1 poids)`
         },
         {
+          id: 'voleur_potion',
           label: `Potion de soin`
         }
       ]

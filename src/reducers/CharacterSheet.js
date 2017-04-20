@@ -130,17 +130,22 @@ function sortLooks(a, b) {
 
 function getEquipments(selected, equipments, classId) {
   let ret = [];
+  let arrayRow = selected.split(',');
+  const index = arrayRow[0];
+  const selectedId = arrayRow[1];
   const currentClass = Utils.getClassFromId(classId);
-  for(let equipment of currentClass.equipments) {
+  for(let i = 0; i < currentClass.equipments.length; i++) {
+    const equipment = currentClass.equipments[i];
     if(equipment.label) {
-      ret.push(equipment.label);
+      ret.push(equipment);
     } else if(equipment.choices) {
-      if(equipment.choices.find(c => selected === c.label)) {
-        ret.push(selected);
+      const currentSelected = equipment.choices.find(c => selectedId === c.id && i == index);
+      if(currentSelected) {
+        ret.push(currentSelected);
       } else { // si pas sélectionné, mais dans equipments, on ajoute
         for(let choice of equipment.choices) {
-          if(equipments.find(e => e === choice.label)) {
-            ret.push(choice.label);
+          if(equipments.find(e => e.id === choice.id)) {
+            ret.push(choice);
             break;
           }
         }

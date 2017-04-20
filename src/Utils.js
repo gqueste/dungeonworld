@@ -76,9 +76,9 @@ class Utils {
     let ret = [];
     for(let equipment of classe.equipments){
       if(equipment.label) {
-        ret.push(equipment.label);
+        ret.push(equipment);
       } else if(equipment.choices) {
-        ret.push(equipment.choices[0].label);
+        ret.push(equipment.choices[0]);
       }
     }
     return ret;

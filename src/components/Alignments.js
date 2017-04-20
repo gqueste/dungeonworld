@@ -8,7 +8,7 @@ class Alignments extends Component {
     }
 
     const alignmentsList = this.props.alignments.map((alignment, index) =>
-      <option key={alignment.id + Math.random()} value={alignment.title}>{alignment.title} - {alignment.description}</option>
+      <option key={alignment.id} value={alignment.title}>{alignment.title} - {alignment.description}</option>
     );
 
     return(

@@ -316,20 +316,25 @@ export const Barbare = {
   maxWeight: 9,
   equipments: [
     {
+      id: 'barbare_rations',
       label: `Des rations (5 utilisations, 1 poids)`
     },
     {
+      id: 'barbare_dague',
       label: `Une dague (contact, 1 poids)`
     },
     {
+      id: 'barbare_souvenir',
       label: `Un souvenir de vos voyages de votre terre natale`
     },
     {
       choices: [
         {
+          id: 'barbare_hache',
           label: `Hache (proche, 1 poids)`
         },
         {
+          id: 'barbare_epee',
           label: `Epée à deux mains (proche, +1 dégât, 2 poids)`
         },
       ]
@@ -337,9 +342,11 @@ export const Barbare = {
     {
       choices: [
         {
+          id: 'barbare_sac',
           label: `Sac d'aventurier (1 poids) et des rations (5 utilisations, 1 poids)`
         },
         {
+          id: 'barbare_cotte',
           label: `Cotte de mailles (1 armure, 1 poids)`
         }
       ]
