@@ -240,6 +240,8 @@ export const Barbare = {
       description: `Vous pouvez être elfe, nain, halfelin ou humain, mais vous et les vôtres n'êtres pas d'ici. Au début de chaque session, le MJ vous demandera quelque chose à propos de votre terre natale, pourquoi vous l'avez quittée ou ce que vous avez laissé derrière vous. Si vous répondez, marquez 1 PX.`
     },
     {
+      id: `barbare_choix`,
+      description: `Choisissez :`,
       choices : [
         {
           id: 'barbare_acier',
@@ -261,27 +263,27 @@ export const Barbare = {
       choices: [
         {
           id: `barbare_destruction`,
-          label: `Destruction pure`
+          description: `Destruction pure`
         },
         {
           id: `barbare_pouvoir`,
-          label: `Pouvoir sur autrui`
+          description: `Pouvoir sur autrui`
         },
         {
           id: `barbare_plaisirs`,
-          label: `Plaisirs terrestres`
+          description: `Plaisirs terrestres`
         },
         {
           id: `barbare_conquete`,
-          label: `Conquête`
+          description: `Conquête`
         },
         {
           id: `barbare_richesse`,
-          label: `Richesses et possessions`
+          description: `Richesses et possessions`
         },
         {
           id: `barbare_gloire`,
-          label: `Gloire et renommée`
+          description: `Gloire et renommée`
         }
       ]
     },

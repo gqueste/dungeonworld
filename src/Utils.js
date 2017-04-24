@@ -116,6 +116,17 @@ class Utils {
       return currentClass.races.find(race => race.label === raceLabel).startingActions[0];
     }
   }
+
+  static getDefaultActionsForClass(classe) {
+    return classe.startingActions.map((action) => {
+      if (action.choices) {
+        for (let i = 0; i < action.choices.length; i++) {
+          action.choices[i].selected = i === 0;
+        }
+      }
+      return action;
+    });
+  }
 }
 
 export default Utils;

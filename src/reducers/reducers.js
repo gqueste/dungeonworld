@@ -8,6 +8,7 @@ import { statsChange } from './Stats';
 import { alignmentsChange } from './Alignments';
 import { equipmentsChange } from './Equipments';
 import { bondsChange } from './Bonds';
+import { actionsChange } from './Actions';
 import Utils from '../Utils';
 
 const initialState = {
@@ -20,7 +21,8 @@ const initialState = {
   stats: Utils.getStats(),
   alignments: defaultClasses[0].alignments,
   equipments: defaultClasses[0].equipments,
-  bonds: Utils.getDefaultBondsForClass(defaultClasses[0])
+  bonds: Utils.getDefaultBondsForClass(defaultClasses[0]),
+  actions: Utils.getDefaultActionsForClass(defaultClasses[0])
 }; //default values
 
 
@@ -35,7 +37,8 @@ const DungeonworldApp = (state = initialState, action) => {
     stats: statsChange(state.stats, action),
     alignments: alignmentsChange(state.alignments, action),
     equipments: equipmentsChange(state.equipments, action),
-    bonds: bondsChange(state.bonds, action)
+    bonds: bondsChange(state.bonds, action),
+    actions: actionsChange(state.actions, action)
   };
   return ret;
 };

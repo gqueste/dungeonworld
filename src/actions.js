@@ -68,3 +68,11 @@ export const onBondSelect = (bond) => {
     bond
   }
 }
+
+export const onActionSelectChoice = (action, choice) => {
+  return {
+    type: 'SELECT_ACTION_CHOICE',
+    action,
+    choice
+  }
+}
