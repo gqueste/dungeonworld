@@ -174,7 +174,7 @@ export const Barde = {
     {
       id: `barde_artsarcaniques`,
       title: `Arts arcaniques`,
-      description: `Quand la magie de votre spectacle se matérialise, choisissez un allié et un effet :<ul><li>Soignez 1d8 dégâts.</li><li>Ajoutez 1d4 aux prochains dégâts qu’il inflige.</li><li>Son esprit est libéré d’un enchantement.</li><li>La prochaine fois qu’on l’aide, il reçoit +2 au lieu de +1.</li><ul>Puis, lancez 2d6+CHA. Sur 10+, l’allié bénéficie de l’effet choisi. Sur 7-9, votre magie fonctionne mais vous attirez une attention malvenue ou votre sort se propage à d’autres cibles (au choix du MJ) et les affecte également.`
+      description: `Quand la magie de votre spectacle se matérialise, choisissez un allié et un effet :<ul><li>Soignez 1d8 dégâts.</li><li>Ajoutez 1d4 aux prochains dégâts qu’il inflige.</li><li>Son esprit est libéré d’un enchantement.</li><li>La prochaine fois qu’on l’aide, il reçoit +2 au lieu de +1.</li></ul>Puis, lancez 2d6+CHA. Sur 10+, l’allié bénéficie de l’effet choisi. Sur 7-9, votre magie fonctionne mais vous attirez une attention malvenue ou votre sort se propage à d’autres cibles (au choix du MJ) et les affecte également.`
     },
     {
       id: `barde_unhavredanslatempete`,
@@ -188,31 +188,31 @@ export const Barde = {
       choices : [
         {
           id: `barde_sortsmagie`,
-          title: `Sorts & magie`
+          description: `Sorts & magie`
         },
         {
           id: `barde_mortsetmortsvivants`,
-          title: `Morts et morts-vivants`
+          description: `Morts et morts-vivants`
         },
         {
           id: `barde_grandsevenementsdumondeconnu`,
-          title: `Grands évènements du monde connu`
+          description: `Grands évènements du monde connu`
         },
         {
           id: `barde_bestiairedescreaturesinhabituelles`,
-          title: `Bestiaire des créatures inhabituelles`
+          description: `Bestiaire des créatures inhabituelles`
         },
         {
           id: `barde_spheresplanaires`,
-          title: `Sphères planaires`
+          description: `Sphères planaires`
         },
         {
           id: `barde_legendesdesherosdupasse`,
-          title: `Légendes des héros du passé`
+          description: `Légendes des héros du passé`
         },
         {
           id: `barde_lesdieuxetleursserviteurs`,
-          title: `Les dieux et leurs serviteurs`
+          description: `Les dieux et leurs serviteurs`
         }
       ]
     },

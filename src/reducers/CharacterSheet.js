@@ -14,7 +14,8 @@ export const defaultCharacterSheet = {
   alignment: Utils.getClasses()[0].alignments[0],
   equipments: Utils.getDefaultEquipments(Utils.getClasses()[0]),
   bonds: Utils.getDefaultBondsForClass(Utils.getClasses()[0]),
-  raceStartingAction: Utils.getStartingActionForClass(Utils.getClasses()[0])
+  raceStartingAction: Utils.getStartingActionForClass(Utils.getClasses()[0]),
+  actions: Utils.getDefaultActionsForClass(Utils.getClasses()[0])
 };
 
 export const characterSheetChange = (characterSheet, action) => {
@@ -34,7 +35,8 @@ export const characterSheetChange = (characterSheet, action) => {
         alignment: currentClass.alignments[0],
         equipments: Utils.getDefaultEquipments(currentClass),
         bonds: Utils.getDefaultBondsForClass(currentClass),
-        raceStartingAction: Utils.getStartingActionForClass(currentClass)
+        raceStartingAction: Utils.getStartingActionForClass(currentClass),
+        actions: Utils.getDefaultActionsForClass(currentClass)
       });
     case 'CHANGE_NAME':
       return Object.assign({}, characterSheet, {
@@ -115,6 +117,10 @@ export const characterSheetChange = (characterSheet, action) => {
     case 'SELECT_BOND':
       return Object.assign({}, characterSheet, {
         bonds : characterSheet.bonds
+      });
+    case 'SELECT_ACTION_CHOICE':
+      return Object.assign({}, characterSheet, {
+        actions : characterSheet.actions
       });
     default:
       return characterSheet;

@@ -99,11 +99,36 @@ class CharacterSheet extends Component {
         }
       }
 
+      const startingActions = this.props.characterSheet.actions.map((action) => {
+        if (action.choices) {
+          const actionChoices = action.choices.map((choice) => {
+            if (choice.selected) {
+              return (
+                <div key={choice.id}>
+                  - {(choice.title || choice.description)}
+                </div>
+              );
+            }
+            return null;
+          });
+          return (
+            <li key={action.id}><strong>{action.title}</strong>
+              {actionChoices}
+            </li>
+          );
+        } else {
+          return (
+            <li key={action.id}><strong>{action.title}</strong></li>
+          );
+        }
+      });
+
       return (
         <div>
           <p>Actions</p>
           <ul>
             {raceStartingAction()}
+            {startingActions}
           </ul>
         </div>
       );
