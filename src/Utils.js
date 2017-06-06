@@ -110,7 +110,7 @@ class Utils {
 
   static getStartingActionForRace(classId, raceLabel) {
     const currentClass = Utils.getClassFromId(classId);
-    if(!currentClass.races) {
+    if(!currentClass.races || !currentClass.races.find(race => race.startingActions !== undefined)) {
       return undefined;
     } else {
       return currentClass.races.find(race => race.label === raceLabel).startingActions[0];

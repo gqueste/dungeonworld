@@ -1,3 +1,23 @@
 .look-button {
   white-space: normal;
 }
+
+.vertical-text {
+  transform: rotate(-90deg);
+  transform-origin: left top 0;
+  white-space: nowrap;
+}
+
+.align-container {
+  display: flex;
+  align-items: center;
+}
+
+.italic-font {
+  font-style: italic;
+}
+
+.characterSheet-row {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}

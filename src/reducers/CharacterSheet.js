@@ -1,6 +1,7 @@
 import Utils from '../Utils';
 
 export const defaultCharacterSheet = {
+  label: Utils.getClasses()[0].label,
   description: Utils.getClasses()[0].description,
   name: Utils.getDefaultNamesForClass(Utils.getClasses()[0].id)[0].label,
   title: Utils.getClasses()[0].titles ? Utils.getClasses()[0].titles[0].label: null,
@@ -23,6 +24,7 @@ export const characterSheetChange = (characterSheet, action) => {
     case 'CHANGE_CLASS':
       const currentClass = Utils.getClassFromId(action.id);
       return Object.assign({}, characterSheet, {
+        label: currentClass.label,
         description: currentClass.description,
         name: Utils.getDefaultNamesForClass(currentClass.id)[0].label,
         title: currentClass.titles ? currentClass.titles[0].label: null,

@@ -162,7 +162,7 @@ export const Voleur = {
     {
       id: `voleur_expertisedespieges`,
       title: `Expertise des pièges`,
-      description: `Quand vous prenez le temps d’étudier une zone dangereuse, lancez 2d6+DEX. Sur 10+ prenez 3, sur 7-9 prenez 1. Dépensez 1 pour poser une des questions suivantes pendant que vous vous déplacez dans cette zone :<ul><li>Y a-t-il un piège ici et si oui, comment se déclenche-t-il ?</li><li>Que fait ce piège quand il se déclenche ?</li><li>Qu’y a-t-il d’autre caché ici ?</li></ul>`
+      description: `Quand vous prenez le temps d’étudier une zone dangereuse, lancez 2d6+DEX. Sur 10+ prenez 3, sur 7-9 prenez 1. Dépensez 1 pour poser une des questions suivantes pendant que vous vous déplacez dans cette zone :<ul><li>Y a-t-il un piège ici et si oui, comment se déclenche-t-il ?</li><li>Que fait ce piège quand il se déclenche ?</li><li>Qu’y a-t-il d’autre caché ici ?</li></ul>`
     },
     {
       id: `voleur_ficellesdumetier`,

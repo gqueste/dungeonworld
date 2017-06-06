@@ -95,19 +95,47 @@ export const Barbare = {
   races: [
     {
       id: 'barbare_human',
-      label: 'Humain'
+      label: 'Humain',
+      startingActions: [
+        {
+          id: `barbare_etranger`,
+          title: `Etranger`,
+          description: `Vous pouvez être elfe, nain, halfelin ou humain, mais vous et les vôtres n'êtres pas d'ici. Au début de chaque session, le MJ vous demandera quelque chose à propos de votre terre natale, pourquoi vous l'avez quittée ou ce que vous avez laissé derrière vous. Si vous répondez, marquez 1 PX.`
+        }
+      ]
     },
     {
       id: 'barbare_elfe',
-      label: 'Elfe'
+      label: 'Elfe',
+      startingActions: [
+        {
+          id: `barbare_etranger`,
+          title: `Etranger`,
+          description: `Vous pouvez être elfe, nain, halfelin ou humain, mais vous et les vôtres n'êtres pas d'ici. Au début de chaque session, le MJ vous demandera quelque chose à propos de votre terre natale, pourquoi vous l'avez quittée ou ce que vous avez laissé derrière vous. Si vous répondez, marquez 1 PX.`
+        }
+      ]
     },
     {
       id: 'barbare_nain',
-      label: 'Nain'
+      label: 'Nain',
+      startingActions: [
+        {
+          id: `barbare_etranger`,
+          title: `Etranger`,
+          description: `Vous pouvez être elfe, nain, halfelin ou humain, mais vous et les vôtres n'êtres pas d'ici. Au début de chaque session, le MJ vous demandera quelque chose à propos de votre terre natale, pourquoi vous l'avez quittée ou ce que vous avez laissé derrière vous. Si vous répondez, marquez 1 PX.`
+        }
+      ]
     },
     {
       id: 'barbare_halfelin',
-      label: 'Halfelin'
+      label: 'Halfelin',
+      startingActions: [
+        {
+          id: `barbare_etranger`,
+          title: `Etranger`,
+          description: `Vous pouvez être elfe, nain, halfelin ou humain, mais vous et les vôtres n'êtres pas d'ici. Au début de chaque session, le MJ vous demandera quelque chose à propos de votre terre natale, pourquoi vous l'avez quittée ou ce que vous avez laissé derrière vous. Si vous répondez, marquez 1 PX.`
+        }
+      ]
     }
   ],
   titles: [
@@ -235,11 +263,6 @@ export const Barbare = {
   //TODO
   startingActions : [
     {
-      id: `barbare_etranger`,
-      title: `Etranger`,
-      description: `Vous pouvez être elfe, nain, halfelin ou humain, mais vous et les vôtres n'êtres pas d'ici. Au début de chaque session, le MJ vous demandera quelque chose à propos de votre terre natale, pourquoi vous l'avez quittée ou ce que vous avez laissé derrière vous. Si vous répondez, marquez 1 PX.`
-    },
-    {
       id: `barbare_choix`,
       description: `Choisissez :`,
       choices : [
@@ -260,6 +283,7 @@ export const Barbare = {
       title: `Appétits herculéens`,
       description: `Les autres peuvent se contenter d'un vin ou d'un ou deux esclaves à leur service, mais il vous en faut plus !<br>Choisissez deux ambissions ci-dessous. Lorsque vous poursuivez une de vos ambitions, si vous deviez lancer deux d6 pour une action, lancez un d6 et un d8 à la place. Si le résultat du d6 est supérieur à celui du d8, le MJ peut introduire une complication ou un danger provoqué par votre avidité.`,
       //TODO
+      multipleChoices: true,
       choices: [
         {
           id: `barbare_destruction`,
