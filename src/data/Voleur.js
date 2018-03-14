@@ -1,6 +1,6 @@
 export const Voleur = {
   id: 'voleur',
-  label: `Le Voleur`,
+  label: `Le voleur`,
   description: `Tu les écoutes autour du feu de camp, se vantant de je ne sais quel combat ou de la bonne fortune qui veille sur votre groupe. Toi, tu comptes ton or et tu souris dans ton coin - ça, c’est le pied !<br>Tu es le seul à connaître le secret de Dungeon World : le pognon, le fric, l’oseille !<br>C’est sûr, ils t’ont fait la gueule à chaque fois que tu t’es tiré en douce, mais sans toi, lequel n’aurait pas été découpé par une lame volante ou empoisonné à mort par un vieux piège à aiguilles ? Alors, laisse-les brailler. Quand t’en auras fini avec tout ça, tu pourras trinquer à la gloire de ces héros morts. Dans ton château et blindé de thune. Crapule !`,
   races: [
     {
