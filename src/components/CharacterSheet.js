@@ -85,9 +85,7 @@ class CharacterSheet extends Component {
             <div>
               <strong>{this.props.characterSheet.raceStartingAction.title}</strong>
             </div>
-            <div>
-              {this.props.characterSheet.raceStartingAction.description}
-            </div>
+            <div dangerouslySetInnerHTML={{__html: this.props.characterSheet.raceStartingAction.description}}></div>
           </div>
         )
       }
