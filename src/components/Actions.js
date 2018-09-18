@@ -8,7 +8,7 @@ class Actions extends Component {
         const actionChoices = action.choices.map((choice) =>
           <div key={choice.id} className="radio">
             <label>
-              <input type="radio" value={choice.id} checked={choice.selected} onChange={e => this.props.onSelectChoice(action, choice)}/><strong>{choice.title}</strong>{choice.title ? ' : ': ''}<span dangerouslySetInnerHTML={{__html: choice.description}}></span>
+              <input type="radio" value={choice.id} checked={choice.selected} onChange={()=>{}} onClick={e => this.props.onSelectChoice(action, choice)}/><strong>{choice.title}</strong>{choice.title ? ' : ': ''}<span dangerouslySetInnerHTML={{__html: choice.description}}></span>
             </label>
           </div>
         );

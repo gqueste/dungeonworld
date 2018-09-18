@@ -1,8 +1,6 @@
 # Dungeon World character generator
 React / Redux - Character creation helper for the paper role play game "Dungeon World"
 
-TODO :
-* Multiple selection on the "Barbare" starting actions does not allow to deselect
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 

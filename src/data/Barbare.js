@@ -260,7 +260,6 @@ export const Barbare = {
   ],
   baseHP : 8,
   damage: 10,
-  //TODO
   startingActions : [
     {
       id: `barbare_choix`,
@@ -282,7 +281,6 @@ export const Barbare = {
       id: `barbare_hercule`,
       title: `Appétits herculéens`,
       description: `Les autres peuvent se contenter d'un vin ou d'un ou deux esclaves à leur service, mais il vous en faut plus !<br>Choisissez deux ambissions ci-dessous. Lorsque vous poursuivez une de vos ambitions, si vous deviez lancer deux d6 pour une action, lancez un d6 et un d8 à la place. Si le résultat du d6 est supérieur à celui du d8, le MJ peut introduire une complication ou un danger provoqué par votre avidité.`,
-      //TODO
       multipleChoices: true,
       choices: [
         {
